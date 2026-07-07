@@ -3,7 +3,7 @@ window.PADIYATH_DEPARTMENTS = [
     slug: "cardiology",
     name: "Cardiology",
     shortDescription: "Advanced heart care, diagnostics, and interventional procedures.",
-    image: "images/hero.png",
+    image: "assets/images/hero.png",
     mediaClass: "dept-card-media--cardiology",
     description:
       "The Cardiology department at Padiyath Hospital provides comprehensive cardiovascular care — from preventive screenings and non-invasive diagnostics to advanced interventional procedures. Our board-certified cardiologists use state-of-the-art technology to diagnose and treat heart conditions with precision, compassion, and outstanding clinical outcomes.",
@@ -31,7 +31,7 @@ window.PADIYATH_DEPARTMENTS = [
     slug: "orthopedics",
     name: "Orthopedics",
     shortDescription: "Joint care, sports medicine, and minimally invasive surgery.",
-    image: "images/hero.png",
+    image: "assets/images/hero.png",
     mediaClass: "dept-card-media--orthopedics",
     description:
       "Our Orthopedics department specializes in the diagnosis and treatment of musculoskeletal conditions. From sports injuries and joint replacements to spine care and rehabilitation, our surgeons combine advanced techniques with personalized recovery plans to restore mobility and quality of life.",
@@ -59,7 +59,7 @@ window.PADIYATH_DEPARTMENTS = [
     slug: "pediatrics",
     name: "Pediatrics",
     shortDescription: "Compassionate care for infants, children, and adolescents.",
-    image: "images/hero.png",
+    image: "assets/images/hero.png",
     mediaClass: "dept-card-media--pediatrics",
     description:
       "The Pediatrics department offers gentle, family-centered care for children at every stage of growth. Our pediatricians provide vaccinations, developmental assessments, acute illness management, and specialized care in a warm environment designed to put young patients and parents at ease.",
@@ -87,7 +87,7 @@ window.PADIYATH_DEPARTMENTS = [
     slug: "neurology",
     name: "Neurology",
     shortDescription: "Expert diagnosis and treatment for neurological conditions.",
-    image: "images/hero.png",
+    image: "assets/images/hero.png",
     mediaClass: "dept-card-media--neurology",
     description:
       "Our Neurology department delivers expert care for disorders of the brain, spine, and nervous system. With advanced neuro-imaging and a multidisciplinary approach, we treat stroke, epilepsy, movement disorders, headaches, and complex neurological conditions with precision and compassion.",
@@ -115,7 +115,7 @@ window.PADIYATH_DEPARTMENTS = [
     slug: "general-medicine",
     name: "General Medicine",
     shortDescription: "Comprehensive primary care and preventive health services.",
-    image: "images/hero.png",
+    image: "assets/images/hero.png",
     mediaClass: "dept-card-media--general",
     description:
       "The General Medicine department serves as the foundation of patient care at Padiyath Hospital. Our physicians provide comprehensive primary care, chronic disease management, preventive health screenings, and coordinated referrals to specialists — ensuring continuity of care for every patient.",
@@ -143,7 +143,7 @@ window.PADIYATH_DEPARTMENTS = [
     slug: "gynecology",
     name: "Gynecology",
     shortDescription: "Women's health, maternity care, and reproductive wellness.",
-    image: "images/hero.png",
+    image: "assets/images/hero.png",
     mediaClass: "dept-card-media--gynecology",
     description:
       "Our Gynecology department provides comprehensive women's healthcare across all life stages — from adolescent health and family planning to maternity care and menopause management. We offer a private, supportive environment with experienced specialists dedicated to women's wellness.",

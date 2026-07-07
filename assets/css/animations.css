@@ -1,0 +1,97 @@
+﻿/* Reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+.reveal-delay-5 {
+  transition-delay: 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .about-bg-gradient,
+  .about-visual-glow,
+  .about-shape--ring,
+  .about-float-card,
+  .dept-bg-glow,
+  .dept-badge,
+  .dept-particles::before,
+  .dept-particles::after,
+  .spec-bg-glow,
+  .spec-badge,
+  .spec-deco--1,
+  .spec-deco--2,
+  .why-bg-gradient,
+  .why-badge,
+  .why-deco--1,
+  .why-deco--2,
+  .why-particle,
+  .why-illus-shape--2,
+  .why-illus-shape--3,
+  .impact-bg-gradient,
+  .impact-dashboard-glow,
+  .impact-rings,
+  .impact-ring--pulse,
+  .impact-orbit-badge,
+  .impact-deco--1,
+  .impact-deco--2,
+  .impact-particle {
+    animation: none;
+  }
+
+  .testi-bg-gradient,
+  .testi-deco-quote,
+  .testi-particle,
+  .testi-card {
+    animation: none;
+  }
+
+  .book-bg-gradient,
+  .book-deco--1,
+  .book-deco--2,
+  .book-particle,
+  .book-float,
+  .foot-deco--1,
+  .foot-deco--2,
+  .foot-particle--1,
+  .foot-particle--2 {
+    animation: none;
+  }
+
+  .foot-cursor-glow {
+    display: none;
+  }
+
+  .dept-card[data-tilt],
+  .spec-card[data-doc-tilt],
+  .why-card[data-why-tilt] {
+    transform: none !important;
+  }
+}
+

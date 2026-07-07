@@ -1,0 +1,254 @@
+﻿/* â”€â”€â”€ Departments Page & Detail â”€â”€â”€ */
+.departments-page-section {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.dept-breadcrumb {
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.dept-breadcrumb a {
+  color: var(--medical-blue);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.dept-breadcrumb a:hover {
+  opacity: 0.75;
+}
+
+.dept-detail-banner {
+  position: relative;
+  margin-top: 1.25rem;
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: linear-gradient(165deg, #f8fbff 0%, #ffffff 50%, #eef5ff 100%);
+  border: 1px solid rgba(11, 94, 215, 0.08);
+}
+
+.dept-detail-banner-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.dept-detail-banner-glow {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  top: -20%;
+  right: -10%;
+  border-radius: 50%;
+  background: rgba(11, 94, 215, 0.06);
+  filter: blur(60px);
+}
+
+.dept-detail-banner-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 0.9fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dept-detail-banner-content h1 {
+  margin: 0.65rem 0 0;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--deep-navy);
+}
+
+.dept-detail-banner-lead {
+  margin: 1rem 0 0;
+  max-width: 42ch;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.dept-detail-banner-content .btn-primary {
+  margin-top: 1.5rem;
+}
+
+.dept-detail-banner-media {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  box-shadow: var(--shadow-medium);
+}
+
+.dept-detail-banner-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dept-detail-banner-media .dept-card-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.dept-detail-section {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 3vw, 2rem);
+  border-radius: var(--radius-xl);
+  background: #fff;
+  border: 1px solid rgba(11, 94, 215, 0.06);
+}
+
+.dept-detail-section--alt {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.dept-detail-section--book {
+  background: linear-gradient(165deg, #f8fbff 0%, #ffffff 45%, #f0f6ff 100%);
+}
+
+.dept-detail-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dept-detail-section-header {
+  margin-bottom: 1.5rem;
+}
+
+.dept-detail-section-header--center {
+  text-align: center;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dept-detail-section-header h2 {
+  margin: 0.65rem 0 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--deep-navy);
+}
+
+.dept-detail-section-intro {
+  margin: 0.85rem 0 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.dept-detail-description {
+  margin: 0;
+  max-width: 72ch;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.dept-detail-services {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1.5rem;
+}
+
+.dept-detail-service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(11, 94, 215, 0.08);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.dept-detail-service-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 8px;
+  background: rgba(11, 94, 215, 0.08);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.dept-detail-service-icon svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  stroke: var(--medical-blue);
+  stroke-width: 2;
+  fill: none;
+}
+
+.dept-detail-doctors {
+  margin-top: 0.5rem;
+}
+
+.dept-detail-appointment-wrap {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(360px, 1.05fr);
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.dept-detail-book-panel {
+  border-radius: 22px;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dept-detail-empty {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.dept-detail-empty h1 {
+  font-family: var(--font-serif);
+  color: var(--deep-navy);
+}
+
+.dept-detail-empty p {
+  color: var(--text-muted);
+  margin: 0.75rem 0 1.5rem;
+}
+
+a.spec-book-btn {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-tagline a {
+  color: var(--medical-blue);
+  text-decoration: none;
+}
+
+.footer-tagline a:hover {
+  text-decoration: underline;
+}
+
