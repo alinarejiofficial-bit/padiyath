@@ -10,12 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <main class="page-shell">
       <header class="top-nav" aria-label="Primary navigation">
-        <a class="brand" href="#" aria-label="Padiyath Hospital home">
+        <a class="brand" href="index.html" aria-label="Padiyath Hospital home">
           <span class="brand-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
               <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
@@ -29,10 +29,9 @@
         </a>
 
         <nav class="nav-links">
-          <a class="active" href="#">Home</a>
-          <a href="#about-us">About Us</a>
-          <a href="#">Our Hospital</a>
-          <a href="#featured-departments">Departments</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="departments.html">Departments</a>
           <a href="#featured-doctors">Specialists</a>
           <a href="#contact-information">Contact</a>
         </nav>
@@ -262,12 +261,12 @@
               </article>
             </div>
 
-            <button class="btn-primary about-cta reveal reveal-delay-5" type="button">
+            <a class="btn-primary about-cta reveal reveal-delay-5" href="about.html">
               Learn More
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
-            </button>
+            </a>
           </div>
 
           <div class="about-visual reveal reveal-delay-2" data-parallax>
@@ -392,16 +391,16 @@
             with experienced specialists and cutting-edge technology to provide comprehensive
             healthcare for every patient.
           </p>
-          <button class="btn-primary dept-header-cta" type="button">
+          <a class="btn-primary dept-header-cta" href="departments.html">
             View All Departments
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
-          </button>
+          </a>
         </header>
 
         <div class="dept-grid">
-          <article class="dept-card reveal reveal-delay-1" data-tilt>
+          <a href="department.html?dept=cardiology" class="dept-card reveal reveal-delay-1" data-tilt>
             <div class="dept-card-media dept-card-media--cardiology">
               <img src="images/hero.png" alt="" loading="lazy" decoding="async" />
               <div class="dept-card-overlay"></div>
@@ -414,16 +413,16 @@
             <div class="dept-card-body">
               <h3>Cardiology</h3>
               <p>Advanced heart care, diagnostics, and interventional procedures.</p>
-              <button class="dept-card-link" type="button">
+              <span class="dept-card-link">
                 Explore Department
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
-              </button>
+              </span>
             </div>
-          </article>
+          </a>
 
-          <article class="dept-card reveal reveal-delay-2" data-tilt>
+          <a href="department.html?dept=orthopedics" class="dept-card reveal reveal-delay-2" data-tilt>
             <div class="dept-card-media dept-card-media--orthopedics">
               <img src="images/hero.png" alt="" loading="lazy" decoding="async" />
               <div class="dept-card-overlay"></div>
@@ -437,16 +436,16 @@
             <div class="dept-card-body">
               <h3>Orthopedics</h3>
               <p>Joint care, sports medicine, and minimally invasive surgery.</p>
-              <button class="dept-card-link" type="button">
+              <span class="dept-card-link">
                 Explore Department
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
-              </button>
+              </span>
             </div>
-          </article>
+          </a>
 
-          <article class="dept-card reveal reveal-delay-3" data-tilt>
+          <a href="department.html?dept=pediatrics" class="dept-card reveal reveal-delay-3" data-tilt>
             <div class="dept-card-media dept-card-media--pediatrics">
               <img src="images/hero.png" alt="" loading="lazy" decoding="async" />
               <div class="dept-card-overlay"></div>
@@ -460,16 +459,16 @@
             <div class="dept-card-body">
               <h3>Pediatrics</h3>
               <p>Compassionate care for infants, children, and adolescents.</p>
-              <button class="dept-card-link" type="button">
+              <span class="dept-card-link">
                 Explore Department
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
-              </button>
+              </span>
             </div>
-          </article>
+          </a>
 
-          <article class="dept-card reveal reveal-delay-4" data-tilt>
+          <a href="department.html?dept=neurology" class="dept-card reveal reveal-delay-4" data-tilt>
             <div class="dept-card-media dept-card-media--neurology">
               <img src="images/hero.png" alt="" loading="lazy" decoding="async" />
               <div class="dept-card-overlay"></div>
@@ -483,16 +482,16 @@
             <div class="dept-card-body">
               <h3>Neurology</h3>
               <p>Expert diagnosis and treatment for neurological conditions.</p>
-              <button class="dept-card-link" type="button">
+              <span class="dept-card-link">
                 Explore Department
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
-              </button>
+              </span>
             </div>
-          </article>
+          </a>
 
-          <article class="dept-card reveal reveal-delay-5" data-tilt>
+          <a href="department.html?dept=general-medicine" class="dept-card reveal reveal-delay-5" data-tilt>
             <div class="dept-card-media dept-card-media--general">
               <img src="images/hero.png" alt="" loading="lazy" decoding="async" />
               <div class="dept-card-overlay"></div>
@@ -506,16 +505,16 @@
             <div class="dept-card-body">
               <h3>General Medicine</h3>
               <p>Comprehensive primary care and preventive health services.</p>
-              <button class="dept-card-link" type="button">
+              <span class="dept-card-link">
                 Explore Department
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
-              </button>
+              </span>
             </div>
-          </article>
+          </a>
 
-          <article class="dept-card reveal reveal-delay-5" data-tilt>
+          <a href="department.html?dept=gynecology" class="dept-card reveal reveal-delay-5" data-tilt>
             <div class="dept-card-media dept-card-media--gynecology">
               <img src="images/hero.png" alt="" loading="lazy" decoding="async" />
               <div class="dept-card-overlay"></div>
@@ -529,14 +528,14 @@
             <div class="dept-card-body">
               <h3>Gynecology</h3>
               <p>Women's health, maternity care, and reproductive wellness.</p>
-              <button class="dept-card-link" type="button">
+              <span class="dept-card-link">
                 Explore Department
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
-              </button>
+              </span>
             </div>
-          </article>
+          </a>
         </div>
 
         <div class="dept-featured reveal" data-dept-parallax>
@@ -598,12 +597,12 @@
                 Personalized treatment
               </li>
             </ul>
-            <button class="btn-primary" type="button">
+            <a class="btn-primary" href="department.html?dept=cardiology">
               Learn More
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -1450,7 +1449,7 @@
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-col footer-col--brand">
-            <a class="footer-brand" href="#" aria-label="Padiyath Hospital home">
+            <a class="footer-brand" href="index.html" aria-label="Padiyath Hospital home">
               <span class="footer-brand-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none">
                   <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
@@ -1485,9 +1484,9 @@
           <div class="footer-col">
             <h4 class="footer-heading">Quick Links</h4>
             <ul class="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about-us">About Us</a></li>
-              <li><a href="#featured-departments">Departments</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="departments.html">Departments</a></li>
               <li><a href="#featured-doctors">Doctors</a></li>
               <li><a href="#appointment">Book Appointment</a></li>
               <li><a href="#contact-information">Contact Us</a></li>
@@ -1498,7 +1497,7 @@
             <h4 class="footer-heading">Medical Departments</h4>
             <ul class="footer-dept-list">
               <li>
-                <a href="#featured-departments">
+                <a href="department.html?dept=cardiology">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-4.35-6.5-9.5A4.5 4.5 0 0 1 12 7.5a4.5 4.5 0 0 1 6.5 4A4.5 4.5 0 0 1 12 21Z" /></svg>
                   </span>
@@ -1506,7 +1505,7 @@
                 </a>
               </li>
               <li>
-                <a href="#featured-departments">
+                <a href="department.html?dept=orthopedics">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M8 4v6M16 4v6M6 10h12v10H6z" /></svg>
                   </span>
@@ -1514,7 +1513,7 @@
                 </a>
               </li>
               <li>
-                <a href="#featured-departments">
+                <a href="department.html?dept=pediatrics">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" /><path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6" /></svg>
                   </span>
@@ -1522,7 +1521,7 @@
                 </a>
               </li>
               <li>
-                <a href="#featured-departments">
+                <a href="department.html?dept=neurology">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-4 5-4 8a4 4 0 0 0 8 0c0-3-2-5-4-8Z" /></svg>
                   </span>
@@ -1530,7 +1529,7 @@
                 </a>
               </li>
               <li>
-                <a href="#featured-departments">
+                <a href="department.html?dept=general-medicine">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16H6z" /><path d="M9 8h6M9 12h4" /></svg>
                   </span>
@@ -1538,7 +1537,7 @@
                 </a>
               </li>
               <li>
-                <a href="#featured-departments">
+                <a href="department.html?dept=gynecology">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7" /><path d="M12 5v14M5 12h14" /></svg>
                   </span>
@@ -1624,6 +1623,6 @@
       </div>
     </footer>
 
-    <script src="index.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
   </body>
 </html>

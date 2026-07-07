@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departments | Padiyath Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="top-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Padiyath Hospital home">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
+              <path d="M12 7.5v9M7.5 12h9" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>PADIYATH</strong>
+            <small>HOSPITAL</small>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a class="active" href="departments.html">Departments</a>
+          <a href="index.html#featured-doctors">Specialists</a>
+          <a href="index.html#contact-information">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="mode-btn" aria-label="Toggle dark mode">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" />
+            </svg>
+          </button>
+          <a class="book-btn" href="index.html#appointment">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="4" y="5" width="16" height="15" rx="2" />
+              <path d="M8 3v4M16 3v4M4 11h16" />
+            </svg>
+            Book Appointment
+          </a>
+        </div>
+      </header>
+
+      <section class="abt-hero reveal" aria-labelledby="dept-page-heading">
+        <div class="abt-hero-bg" aria-hidden="true">
+          <div class="abt-hero-glow abt-hero-glow--1"></div>
+          <div class="abt-hero-glow abt-hero-glow--2"></div>
+        </div>
+        <p class="abt-hero-label">Medical Departments</p>
+        <h1 id="dept-page-heading">
+          Specialized Care,
+          <span>Every Specialty</span>
+        </h1>
+        <p class="abt-hero-lead">
+          Explore our medical departments — each staffed by experienced specialists and equipped
+          with advanced technology for comprehensive patient care.
+        </p>
+      </section>
+
+      <section
+        class="departments-section departments-page-section"
+        id="departments-list"
+        aria-labelledby="dept-list-heading"
+      >
+        <div class="dept-cursor-glow" aria-hidden="true"></div>
+        <div class="dept-bg" aria-hidden="true">
+          <div class="dept-bg-glow dept-bg-glow--1"></div>
+          <div class="dept-bg-glow dept-bg-glow--2"></div>
+          <div class="dept-bg-pattern"></div>
+          <div class="dept-deco dept-deco--plus dept-deco--1"></div>
+          <div class="dept-deco dept-deco--plus dept-deco--2"></div>
+          <div class="dept-deco dept-deco--ring"></div>
+          <div class="dept-particles" aria-hidden="true"></div>
+        </div>
+
+        <header class="dept-header reveal">
+          <p class="dept-label">All Departments</p>
+          <h2 id="dept-list-heading">Find the Right Care for Your Needs</h2>
+          <p class="dept-intro">
+            Select a department to view detailed information, services offered, associated doctors,
+            and book an appointment.
+          </p>
+        </header>
+
+        <div class="dept-grid">
+          <a href="department.html?dept=cardiology" class="dept-card reveal reveal-delay-1" data-tilt>
+            <div class="dept-card-media dept-card-media--cardiology">
+              <img src="images/hero.png" alt="Cardiology department" loading="lazy" decoding="async" />
+              <div class="dept-card-overlay"></div>
+              <span class="dept-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s-6.5-4.35-6.5-9.5A4.5 4.5 0 0 1 12 7.5a4.5 4.5 0 0 1 6.5 4A4.5 4.5 0 0 1 12 21Z" />
+                </svg>
+              </span>
+            </div>
+            <div class="dept-card-body">
+              <h3>Cardiology</h3>
+              <p>Advanced heart care, diagnostics, and interventional procedures.</p>
+              <span class="dept-card-link">
+                View Department
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="department.html?dept=orthopedics" class="dept-card reveal reveal-delay-2" data-tilt>
+            <div class="dept-card-media dept-card-media--orthopedics">
+              <img src="images/hero.png" alt="Orthopedics department" loading="lazy" decoding="async" />
+              <div class="dept-card-overlay"></div>
+              <span class="dept-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M8 4v6M16 4v6M6 10h12v10H6z" />
+                </svg>
+              </span>
+            </div>
+            <div class="dept-card-body">
+              <h3>Orthopedics</h3>
+              <p>Joint care, sports medicine, and minimally invasive surgery.</p>
+              <span class="dept-card-link">
+                View Department
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="department.html?dept=pediatrics" class="dept-card reveal reveal-delay-3" data-tilt>
+            <div class="dept-card-media dept-card-media--pediatrics">
+              <img src="images/hero.png" alt="Pediatrics department" loading="lazy" decoding="async" />
+              <div class="dept-card-overlay"></div>
+              <span class="dept-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="8" r="3.5" />
+                  <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+                </svg>
+              </span>
+            </div>
+            <div class="dept-card-body">
+              <h3>Pediatrics</h3>
+              <p>Compassionate care for infants, children, and adolescents.</p>
+              <span class="dept-card-link">
+                View Department
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="department.html?dept=neurology" class="dept-card reveal reveal-delay-4" data-tilt>
+            <div class="dept-card-media dept-card-media--neurology">
+              <img src="images/hero.png" alt="Neurology department" loading="lazy" decoding="async" />
+              <div class="dept-card-overlay"></div>
+              <span class="dept-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3c-2 3-4 5-4 8a4 4 0 0 0 8 0c0-3-2-5-4-8Z" />
+                </svg>
+              </span>
+            </div>
+            <div class="dept-card-body">
+              <h3>Neurology</h3>
+              <p>Expert diagnosis and treatment for neurological conditions.</p>
+              <span class="dept-card-link">
+                View Department
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="department.html?dept=general-medicine" class="dept-card reveal reveal-delay-5" data-tilt>
+            <div class="dept-card-media dept-card-media--general">
+              <img src="images/hero.png" alt="General Medicine department" loading="lazy" decoding="async" />
+              <div class="dept-card-overlay"></div>
+              <span class="dept-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 4h12v16H6z" />
+                  <path d="M9 8h6M9 12h4" />
+                </svg>
+              </span>
+            </div>
+            <div class="dept-card-body">
+              <h3>General Medicine</h3>
+              <p>Comprehensive primary care and preventive health services.</p>
+              <span class="dept-card-link">
+                View Department
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="department.html?dept=gynecology" class="dept-card reveal reveal-delay-5" data-tilt>
+            <div class="dept-card-media dept-card-media--gynecology">
+              <img src="images/hero.png" alt="Gynecology department" loading="lazy" decoding="async" />
+              <div class="dept-card-overlay"></div>
+              <span class="dept-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="7" />
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </span>
+            </div>
+            <div class="dept-card-body">
+              <h3>Gynecology</h3>
+              <p>Women's health, maternity care, and reproductive wellness.</p>
+              <span class="dept-card-link">
+                View Department
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" tabindex="-1" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 5v14M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <footer class="site-footer reveal" id="site-footer">
+      <div class="foot-cursor-glow" aria-hidden="true"></div>
+      <div class="foot-bg" aria-hidden="true">
+        <div class="foot-bg-glow foot-bg-glow--1"></div>
+        <div class="foot-bg-glow foot-bg-glow--2"></div>
+        <div class="foot-bg-wave"></div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col footer-col--brand">
+            <a class="footer-brand" href="index.html" aria-label="Padiyath Hospital home">
+              <span class="footer-brand-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
+                  <path d="M12 7.5v9M7.5 12h9" />
+                </svg>
+              </span>
+              <span class="footer-brand-text">
+                <strong>PADIYATH</strong>
+                <small>HOSPITAL</small>
+              </span>
+            </a>
+            <p class="footer-desc">
+              Providing compassionate, world-class healthcare with experienced specialists,
+              advanced technology, and patient-centered care.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="departments.html">Departments</a></li>
+              <li><a href="index.html#appointment">Book Appointment</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Departments</h4>
+            <ul class="footer-dept-list">
+              <li><a href="department.html?dept=cardiology">Cardiology</a></li>
+              <li><a href="department.html?dept=orthopedics">Orthopedics</a></li>
+              <li><a href="department.html?dept=pediatrics">Pediatrics</a></li>
+              <li><a href="department.html?dept=neurology">Neurology</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Padiyath Hospital. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/departments.js" defer></script>
+  </body>
+</html>

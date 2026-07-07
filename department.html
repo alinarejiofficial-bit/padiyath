@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department | Padiyath Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell" id="department-detail">
+      <header class="top-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Padiyath Hospital home">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
+              <path d="M12 7.5v9M7.5 12h9" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>PADIYATH</strong>
+            <small>HOSPITAL</small>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a class="active" href="departments.html">Departments</a>
+          <a href="index.html#featured-doctors">Specialists</a>
+          <a href="index.html#contact-information">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="mode-btn" aria-label="Toggle dark mode">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" />
+            </svg>
+          </button>
+          <a class="book-btn" href="#dept-appointment">Book Appointment</a>
+        </div>
+      </header>
+
+      <nav class="dept-breadcrumb reveal" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="departments.html">Departments</a>
+        <span aria-hidden="true">/</span>
+        <span data-dept-breadcrumb>Name</span>
+      </nav>
+
+      <section class="dept-detail-banner reveal" data-dept-banner aria-labelledby="dept-banner-title">
+        <div class="dept-detail-banner-bg" aria-hidden="true">
+          <div class="dept-detail-banner-glow"></div>
+        </div>
+        <div class="dept-detail-banner-inner">
+          <div class="dept-detail-banner-content">
+            <p class="dept-label">Medical Department</p>
+            <h1 id="dept-banner-title" data-dept-name>Department</h1>
+            <p class="dept-detail-banner-lead" data-dept-short>Short description</p>
+            <a class="btn-primary" href="#dept-appointment">
+              Book Appointment
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="4" y="5" width="16" height="15" rx="2" />
+                <path d="M8 3v4M16 3v4M4 11h16" />
+              </svg>
+            </a>
+          </div>
+          <div class="dept-detail-banner-media dept-card-media--cardiology">
+            <img src="images/hero.png" alt="" loading="eager" decoding="async" />
+            <div class="dept-card-overlay"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dept-detail-section reveal" aria-labelledby="dept-about-heading">
+        <div class="dept-detail-section-inner">
+          <header class="dept-detail-section-header">
+            <p class="dept-label">Overview</p>
+            <h2 id="dept-about-heading">About This Department</h2>
+          </header>
+          <p class="dept-detail-description" data-dept-description>
+            Loading department information…
+          </p>
+        </div>
+      </section>
+
+      <section class="dept-detail-section dept-detail-section--alt reveal" aria-labelledby="dept-services-heading">
+        <div class="dept-detail-section-inner">
+          <header class="dept-detail-section-header">
+            <p class="dept-label">What We Offer</p>
+            <h2 id="dept-services-heading">Services Offered</h2>
+          </header>
+          <ul class="dept-detail-services" data-dept-services></ul>
+        </div>
+      </section>
+
+      <section class="dept-detail-section reveal" aria-labelledby="dept-doctors-heading">
+        <div class="dept-detail-section-inner">
+          <header class="dept-detail-section-header dept-detail-section-header--center">
+            <p class="dept-label">Our Specialists</p>
+            <h2 id="dept-doctors-heading">Associated Doctors</h2>
+            <p class="dept-detail-section-intro">
+              Meet the experienced specialists leading care in this department.
+            </p>
+          </header>
+          <div class="dept-detail-doctors spec-grid" data-dept-doctors></div>
+        </div>
+      </section>
+
+      <section
+        class="dept-detail-section dept-detail-section--book reveal"
+        id="dept-appointment"
+        aria-labelledby="dept-appointment-heading"
+      >
+        <div class="dept-detail-section-inner dept-detail-appointment-wrap">
+          <header class="dept-detail-section-header">
+            <p class="book-label">Book Appointment</p>
+            <h2 id="dept-appointment-heading">Schedule Your Consultation</h2>
+            <p class="dept-detail-section-intro">
+              Request an appointment with our department specialists. Our team will confirm your
+              slot within 24 hours.
+            </p>
+          </header>
+
+          <div class="book-panel dept-detail-book-panel">
+            <form class="book-form dept-detail-form" action="#" method="post">
+              <div class="book-field">
+                <label for="dept-patient-name">Patient Name</label>
+                <input id="dept-patient-name" name="name" type="text" placeholder="Full name" required />
+              </div>
+              <div class="book-field-row">
+                <div class="book-field">
+                  <label for="dept-patient-phone">Phone Number</label>
+                  <input id="dept-patient-phone" name="phone" type="tel" placeholder="+91" required />
+                </div>
+                <div class="book-field">
+                  <label for="dept-patient-email">Email Address</label>
+                  <input id="dept-patient-email" name="email" type="email" placeholder="you@email.com" />
+                </div>
+              </div>
+              <div class="book-field-row">
+                <div class="book-field">
+                  <label for="dept-patient-dept">Department</label>
+                  <select id="dept-patient-dept" name="department" required></select>
+                </div>
+                <div class="book-field">
+                  <label for="dept-patient-doctor">Preferred Doctor</label>
+                  <select id="dept-patient-doctor" name="doctor"></select>
+                </div>
+              </div>
+              <div class="book-field">
+                <label for="dept-patient-date">Preferred Date</label>
+                <input id="dept-patient-date" name="date" type="date" required />
+              </div>
+              <div class="book-field">
+                <label for="dept-patient-message">Message</label>
+                <textarea id="dept-patient-message" name="message" rows="3" placeholder="Tell us about your concern..."></textarea>
+              </div>
+              <button class="btn-primary book-submit" type="submit">Book Appointment</button>
+            </form>
+            <ul class="book-assurance">
+              <li><span aria-hidden="true">✓</span> Secure Appointment Request</li>
+              <li><span aria-hidden="true">✓</span> Fast Response Within 24 Hours</li>
+              <li><span aria-hidden="true">✓</span> Experienced Specialists</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" tabindex="-1" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 5v14M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <footer class="site-footer reveal" id="site-footer">
+      <div class="foot-cursor-glow" aria-hidden="true"></div>
+      <div class="foot-bg" aria-hidden="true">
+        <div class="foot-bg-glow foot-bg-glow--1"></div>
+        <div class="foot-bg-glow foot-bg-glow--2"></div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Padiyath Hospital. All Rights Reserved.</p>
+          <p class="footer-tagline"><a href="departments.html">← All Departments</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/departments-data.js" defer></script>
+    <script src="assets/js/departments.js" defer></script>
+  </body>
+</html>
