@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Profile | Padiyath Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell" id="doctor-profile">
+      <header class="top-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Padiyath Hospital home">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
+              <path d="M12 7.5v9M7.5 12h9" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>PADIYATH</strong>
+            <small>HOSPITAL</small>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="departments.html">Departments</a>
+          <a class="active" href="doctors.html">Specialists</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="book-btn" href="#doc-appointment">Book Appointment</a>
+        </div>
+      </header>
+
+      <nav class="doc-breadcrumb reveal" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="doctors.html">Specialists</a>
+        <span aria-hidden="true">/</span>
+        <span data-doc-breadcrumb>Doctor</span>
+      </nav>
+
+      <section class="doc-profile-banner reveal" aria-labelledby="doc-profile-name">
+        <div class="doc-profile-banner-inner">
+          <div class="doc-profile-portrait spec-portrait--1" data-doc-portrait>
+            <span class="spec-initials spec-initials--lg" aria-hidden="true">AM</span>
+          </div>
+          <div class="doc-profile-info">
+            <p class="spec-label">Doctor Profile</p>
+            <h1 id="doc-profile-name" data-doc-name>Doctor Name</h1>
+            <p class="doc-profile-role" data-doc-role>Specialty</p>
+            <p class="doc-profile-dept">
+              <span>Department:</span> <strong data-doc-department>Department</strong>
+            </p>
+            <div class="doc-profile-actions">
+              <a class="btn-primary" href="#doc-appointment">Book Appointment</a>
+              <a class="btn-secondary" href="doctors.html">← All Doctors</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="doc-profile-section reveal" aria-labelledby="doc-about-heading">
+        <div class="doc-profile-section-inner">
+          <h2 id="doc-about-heading">About the Doctor</h2>
+          <p class="doc-profile-bio" data-doc-bio>Loading profile...</p>
+          <dl class="doc-profile-details">
+            <div>
+              <dt>Experience</dt>
+              <dd data-doc-experience>—</dd>
+            </div>
+            <div>
+              <dt>Qualifications</dt>
+              <dd data-doc-qualifications>—</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="doc-profile-section doc-profile-section--alt reveal" aria-labelledby="doc-expertise-heading">
+        <div class="doc-profile-section-inner">
+          <h2 id="doc-expertise-heading">Areas of Expertise</h2>
+          <ul class="doc-profile-expertise" data-doc-expertise></ul>
+        </div>
+      </section>
+
+      <section class="doc-profile-section doc-profile-section--book reveal" id="doc-appointment" aria-labelledby="doc-book-heading">
+        <div class="doc-profile-section-inner doc-profile-appointment-wrap">
+          <header>
+            <p class="book-label">Book Appointment</p>
+            <h2 id="doc-book-heading">Schedule a Consultation</h2>
+            <p class="doc-profile-section-intro">
+              Request an appointment with this specialist. Our team will confirm your slot within 24 hours.
+            </p>
+          </header>
+
+          <div class="book-panel doc-detail-book-panel">
+            <form class="book-form doc-detail-form" action="#" method="post">
+              <div class="book-field">
+                <label for="doc-patient-name">Patient Name</label>
+                <input id="doc-patient-name" name="name" type="text" placeholder="Full name" required />
+              </div>
+              <div class="book-field-row">
+                <div class="book-field">
+                  <label for="doc-patient-phone">Phone Number</label>
+                  <input id="doc-patient-phone" name="phone" type="tel" placeholder="+91" required />
+                </div>
+                <div class="book-field">
+                  <label for="doc-patient-email">Email Address</label>
+                  <input id="doc-patient-email" name="email" type="email" placeholder="you@email.com" />
+                </div>
+              </div>
+              <div class="book-field-row">
+                <div class="book-field">
+                  <label for="doc-patient-dept">Department</label>
+                  <select id="doc-patient-dept" name="department" required></select>
+                </div>
+                <div class="book-field">
+                  <label for="doc-patient-doctor">Doctor</label>
+                  <select id="doc-patient-doctor" name="doctor" required></select>
+                </div>
+              </div>
+              <div class="book-field">
+                <label for="doc-patient-date">Preferred Date</label>
+                <input id="doc-patient-date" name="date" type="date" required />
+              </div>
+              <div class="book-field">
+                <label for="doc-patient-message">Message</label>
+                <textarea id="doc-patient-message" name="message" rows="3" placeholder="Tell us about your concern..."></textarea>
+              </div>
+              <button class="btn-primary book-submit" type="submit">Book Appointment</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" tabindex="-1" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12l7-7 7 7" /></svg>
+    </button>
+
+    <footer class="site-footer reveal" id="site-footer">
+      <div class="footer-inner">
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Padiyath Hospital. All Rights Reserved.</p>
+          <p class="footer-tagline"><a href="doctors.html">← All Specialists</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/doctors-data.js" defer></script>
+    <script src="assets/js/doctors.js" defer></script>
+  </body>
+</html>

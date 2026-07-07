@@ -32,8 +32,8 @@
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
           <a href="departments.html">Departments</a>
-          <a href="#featured-doctors">Specialists</a>
-          <a href="#contact-information">Contact</a>
+          <a href="doctors.html">Specialists</a>
+          <a href="contact.html">Contact</a>
         </nav>
 
         <div class="nav-actions">
@@ -626,12 +626,12 @@
             Our experienced team of doctors is committed to delivering compassionate, evidence-based
             healthcare using advanced medical technology and personalized treatment plans.
           </p>
-          <button class="btn-primary spec-header-cta" type="button">
+          <a class="btn-primary spec-header-cta" href="doctors.html">
             View All Doctors
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
-          </button>
+          </a>
         </header>
 
         <div class="spec-grid">
@@ -644,7 +644,10 @@
               <p class="spec-specialty">Senior Cardiologist</p>
               <p class="spec-meta"><span>18 Years</span> · <span>MD, DM Cardiology</span></p>
               <p class="spec-desc">Expert in interventional cardiology and preventive heart health.</p>
-              <button class="spec-book-btn" type="button">Book Appointment</button>
+              <div class="spec-card-actions">
+                <a class="spec-view-btn" href="doctor.html?doctor=ananya-menon">View Details</a>
+                <a class="spec-book-btn" href="doctor.html?doctor=ananya-menon#doc-appointment">Book Appointment</a>
+              </div>
             </div>
           </article>
 
@@ -657,7 +660,10 @@
               <p class="spec-specialty">Consultant Neurologist</p>
               <p class="spec-meta"><span>16 Years</span> · <span>MD, DM Neurology</span></p>
               <p class="spec-desc">Specialist in stroke care, epilepsy, and neuro-critical medicine.</p>
-              <button class="spec-book-btn" type="button">Book Appointment</button>
+              <div class="spec-card-actions">
+                <a class="spec-view-btn" href="doctor.html?doctor=joseph-mathew">View Details</a>
+                <a class="spec-book-btn" href="doctor.html?doctor=joseph-mathew#doc-appointment">Book Appointment</a>
+              </div>
             </div>
           </article>
 
@@ -670,7 +676,10 @@
               <p class="spec-specialty">Orthopedic Surgeon</p>
               <p class="spec-meta"><span>14 Years</span> · <span>MS Orthopedics</span></p>
               <p class="spec-desc">Focused on arthroscopy, sports medicine, and joint preservation.</p>
-              <button class="spec-book-btn" type="button">Book Appointment</button>
+              <div class="spec-card-actions">
+                <a class="spec-view-btn" href="doctor.html?doctor=nivedita-rao">View Details</a>
+                <a class="spec-book-btn" href="doctor.html?doctor=nivedita-rao#doc-appointment">Book Appointment</a>
+              </div>
             </div>
           </article>
 
@@ -683,7 +692,10 @@
               <p class="spec-specialty">Pediatrician</p>
               <p class="spec-meta"><span>12 Years</span> · <span>MD Pediatrics</span></p>
               <p class="spec-desc">Compassionate care for infants, children, and adolescents.</p>
-              <button class="spec-book-btn" type="button">Book Appointment</button>
+              <div class="spec-card-actions">
+                <a class="spec-view-btn" href="doctor.html?doctor=rahul-pillai">View Details</a>
+                <a class="spec-book-btn" href="doctor.html?doctor=rahul-pillai#doc-appointment">Book Appointment</a>
+              </div>
             </div>
           </article>
 
@@ -696,7 +708,10 @@
               <p class="spec-specialty">Gynecologist</p>
               <p class="spec-meta"><span>15 Years</span> · <span>MD, DGO</span></p>
               <p class="spec-desc">Women's health, maternity care, and reproductive wellness.</p>
-              <button class="spec-book-btn" type="button">Book Appointment</button>
+              <div class="spec-card-actions">
+                <a class="spec-view-btn" href="doctor.html?doctor=meera-thomas">View Details</a>
+                <a class="spec-book-btn" href="doctor.html?doctor=meera-thomas#doc-appointment">Book Appointment</a>
+              </div>
             </div>
           </article>
 
@@ -709,7 +724,10 @@
               <p class="spec-specialty">General Physician</p>
               <p class="spec-meta"><span>20 Years</span> · <span>MD Internal Medicine</span></p>
               <p class="spec-desc">Comprehensive primary care and chronic disease management.</p>
-              <button class="spec-book-btn" type="button">Book Appointment</button>
+              <div class="spec-card-actions">
+                <a class="spec-view-btn" href="doctor.html?doctor=arun-das">View Details</a>
+                <a class="spec-book-btn" href="doctor.html?doctor=arun-das#doc-appointment">Book Appointment</a>
+              </div>
             </div>
           </article>
         </div>
@@ -746,13 +764,15 @@
               cutting-edge technology with compassionate care to deliver outstanding cardiovascular
               outcomes for every patient.
             </p>
-            <button class="btn-primary" type="button">
-              Book Consultation
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="4" y="5" width="16" height="15" rx="2" />
-                <path d="M8 3v4M16 3v4M4 11h16" />
-              </svg>
-            </button>
+            <div class="spec-card-actions spec-card-actions--featured">
+              <a class="btn-primary" href="doctor.html?doctor=ananya-menon">
+                View Profile
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a class="spec-book-btn" href="doctor.html?doctor=ananya-menon#doc-appointment">Book Appointment</a>
+            </div>
           </div>
         </div>
       </section>
@@ -1487,9 +1507,9 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="departments.html">Departments</a></li>
-              <li><a href="#featured-doctors">Doctors</a></li>
+              <li><a href="doctors.html">Doctors</a></li>
               <li><a href="#appointment">Book Appointment</a></li>
-              <li><a href="#contact-information">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
 

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Specialists | Padiyath Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell" id="doctors-page">
+      <header class="top-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Padiyath Hospital home">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
+              <path d="M12 7.5v9M7.5 12h9" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>PADIYATH</strong>
+            <small>HOSPITAL</small>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="departments.html">Departments</a>
+          <a class="active" href="doctors.html">Specialists</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="mode-btn" aria-label="Toggle dark mode">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" />
+            </svg>
+          </button>
+          <a class="book-btn" href="index.html#appointment">Book Appointment</a>
+        </div>
+      </header>
+
+      <section class="doc-hero reveal" aria-labelledby="doc-hero-heading">
+        <div class="doc-hero-bg" aria-hidden="true">
+          <div class="doc-hero-glow doc-hero-glow--1"></div>
+          <div class="doc-hero-glow doc-hero-glow--2"></div>
+        </div>
+        <p class="spec-label">Our Specialists</p>
+        <h1 id="doc-hero-heading">
+          Expert Doctors,
+          <span>Exceptional Care</span>
+        </h1>
+        <p class="doc-hero-lead">
+          Browse our team of board-certified specialists. Search by name or filter by department
+          to find the right doctor for your needs.
+        </p>
+      </section>
+
+      <section class="specialists-section doctors-page-section" aria-labelledby="doctors-grid-heading">
+        <div class="spec-cursor-glow" aria-hidden="true"></div>
+        <div class="spec-bg" aria-hidden="true">
+          <div class="spec-bg-glow spec-bg-glow--1"></div>
+          <div class="spec-bg-glow spec-bg-glow--2"></div>
+          <div class="spec-bg-pattern"></div>
+        </div>
+
+        <div class="doc-toolbar reveal">
+          <div class="doc-search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="6" />
+              <path d="M16 16l4 4" />
+            </svg>
+            <input
+              id="doc-search"
+              type="search"
+              placeholder="Search by name, specialty, or department..."
+              aria-label="Search doctors"
+            />
+          </div>
+          <div class="doc-filter-wrap">
+            <label class="visually-hidden" for="doc-dept-filter">Filter by department</label>
+            <select id="doc-dept-filter" aria-label="Filter by department"></select>
+          </div>
+        </div>
+
+        <p class="doc-results-count reveal" data-doc-count>6 specialists found</p>
+
+        <div data-doc-featured></div>
+
+        <header class="spec-header reveal">
+          <p class="spec-label">All Specialists</p>
+          <h2 id="doctors-grid-heading">Doctors Grid</h2>
+        </header>
+
+        <div class="spec-grid" data-doc-grid></div>
+
+        <p class="doc-empty reveal" data-doc-empty hidden>
+          No doctors match your search. Try a different name or department.
+        </p>
+
+        <div class="doc-cta-banner reveal">
+          <div>
+            <h2>Ready to Book Your Appointment?</h2>
+            <p>Schedule a consultation with our experienced specialists today.</p>
+          </div>
+          <a class="btn-primary" href="index.html#appointment">
+            Book Appointment
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="4" y="5" width="16" height="15" rx="2" />
+              <path d="M8 3v4M16 3v4M4 11h16" />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" tabindex="-1" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12l7-7 7 7" /></svg>
+    </button>
+
+    <footer class="site-footer reveal" id="site-footer">
+      <div class="foot-cursor-glow" aria-hidden="true"></div>
+      <div class="footer-inner">
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Padiyath Hospital. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/doctors-data.js" defer></script>
+    <script src="assets/js/doctors.js" defer></script>
+  </body>
+</html>
