@@ -22,6 +22,8 @@
   --shadow-soft: 0 4px 24px rgba(15, 31, 71, 0.06);
   --shadow-medium: 0 12px 40px rgba(15, 31, 71, 0.1);
   --shadow-elevated: 0 24px 56px rgba(15, 31, 71, 0.14);
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
 }
 
 *,
@@ -33,12 +35,49 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--white);
   color: var(--text-dark);
+}
+
+/* Font system — from code.html */
+.brand-text strong,
+.footer-brand-text strong {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.hero-left h1,
+.about-content h2,
+.dept-header h2,
+.spec-header h2,
+.why-header h2,
+.impact-header h2,
+.testi-top-header h2,
+.book-header h2,
+.home-section h2,
+.appointment-cta h2,
+.dept-card-body h3,
+.dept-featured-content h3,
+.spec-card-panel h3,
+.spec-featured-content h3,
+.why-card h3,
+.impact-card h3,
+.about-card h3,
+.feature-card h3,
+.stat-value {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.testi-deco-quote,
+.testi-quote-icon {
+  font-family: var(--font-serif);
 }
 
 .page-shell {
@@ -92,15 +131,15 @@ body {
 }
 
 .brand-text strong {
-  letter-spacing: 0.03em;
-  font-size: 1.12rem;
+  font-size: 1.5rem;
   color: var(--medical-blue);
 }
 
 .brand-text small {
   margin-top: 0.15rem;
-  letter-spacing: 0.19em;
-  font-size: 0.53rem;
+  letter-spacing: 0.2em;
+  font-size: 0.625rem;
+  font-weight: 500;
   color: #6f82a3;
 }
 
@@ -115,7 +154,6 @@ body {
   color: var(--text-muted);
   font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: -0.01em;
   position: relative;
   transition: color 0.2s ease;
 }
@@ -174,7 +212,7 @@ body {
   color: #fff;
   font-size: 0.875rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.025em;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -229,8 +267,8 @@ body {
   align-items: center;
   gap: 0.4rem;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--medical-blue);
   background: rgba(11, 94, 215, 0.06);
@@ -250,14 +288,14 @@ body {
 .hero-left h1 {
   margin: var(--space-md) 0 0;
   font-size: clamp(2.35rem, 4.8vw, 3.75rem);
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.035em;
+  line-height: 1.05;
   color: var(--deep-navy);
 }
 
 .hero-left h1 span {
   display: block;
+  font-style: italic;
+  font-weight: 400;
   background: linear-gradient(105deg, #0b5ed7 0%, #0694a9 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -271,7 +309,6 @@ body {
   font-size: 1.0625rem;
   font-weight: 400;
   line-height: 1.7;
-  letter-spacing: -0.01em;
 }
 
 .feature-row {
@@ -290,7 +327,6 @@ body {
   color: var(--text-dark);
   font-weight: 500;
   font-size: 0.875rem;
-  letter-spacing: -0.01em;
 }
 
 .feature-check {
@@ -323,9 +359,9 @@ body {
 .btn-secondary {
   border-radius: var(--radius-sm);
   padding: 0.85rem 1.5rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.025em;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -575,18 +611,16 @@ body {
 
 .stat-value {
   margin: 0;
-  font-size: clamp(1.2rem, 1.6vw, 1.5rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
   color: var(--deep-navy);
 }
 
 .stat-label {
   margin: 0.2rem 0 0;
-  font-size: 0.6875rem;
-  font-weight: 600;
+  font-size: 0.625rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.2em;
   color: var(--label);
 }
 
@@ -640,8 +674,8 @@ body {
 .about-label {
   margin: 0;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--medical-blue);
 }
@@ -649,9 +683,7 @@ body {
 .about-content h2 {
   margin: 0.75rem 0 0;
   font-size: clamp(1.85rem, 3.5vw, 2.75rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
   color: var(--deep-navy);
   max-width: 18ch;
 }
@@ -1331,8 +1363,8 @@ body {
 .dept-label {
   margin: 0;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--medical-blue);
 }
@@ -1340,9 +1372,7 @@ body {
 .dept-header h2 {
   margin: 0.75rem 0 0;
   font-size: clamp(1.9rem, 3.8vw, 2.85rem);
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
   color: var(--deep-navy);
 }
 
@@ -1516,9 +1546,7 @@ body {
 
 .dept-card-body h3 {
   margin: 0;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.5rem;
   color: var(--deep-navy);
 }
 
@@ -1681,8 +1709,6 @@ body {
 .dept-featured-content h3 {
   margin: 0.5rem 0 0;
   font-size: clamp(1.75rem, 3vw, 2.25rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
   color: var(--deep-navy);
 }
 
@@ -1893,8 +1919,8 @@ body {
 .spec-label {
   margin: 0;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--medical-blue);
 }
@@ -1902,9 +1928,7 @@ body {
 .spec-header h2 {
   margin: 0.75rem 0 0;
   font-size: clamp(1.9rem, 3.8vw, 2.85rem);
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
   color: var(--deep-navy);
 }
 
@@ -2029,9 +2053,7 @@ body {
 
 .spec-card-panel h3 {
   margin: 0;
-  font-size: 1.0625rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.5rem;
   color: var(--deep-navy);
 }
 
@@ -2194,8 +2216,6 @@ body {
 .spec-featured-content h3 {
   margin: 0.5rem 0 0;
   font-size: clamp(1.65rem, 3vw, 2.1rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
   color: var(--deep-navy);
 }
 
@@ -2484,8 +2504,8 @@ body {
 .why-label {
   margin: 0;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--medical-blue);
 }
@@ -2493,9 +2513,7 @@ body {
 .why-header h2 {
   margin: 0.75rem 0 0;
   font-size: clamp(1.9rem, 3.8vw, 2.75rem);
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
   color: var(--deep-navy);
 }
 
@@ -2648,9 +2666,7 @@ body {
 
 .why-card h3 {
   margin: 0;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-size: 1.5rem;
   color: var(--deep-navy);
 }
 
@@ -3059,8 +3075,8 @@ body {
 .impact-label {
   margin: 0;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--medical-blue);
 }
@@ -3068,9 +3084,7 @@ body {
 .impact-header h2 {
   margin: 0.75rem 0 0;
   font-size: clamp(1.9rem, 3.8vw, 2.75rem);
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
   color: var(--deep-navy);
 }
 
@@ -3430,9 +3444,7 @@ body {
 
 .impact-card h3 {
   margin: 0.4rem 0 0;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-size: 1.5rem;
   color: var(--deep-navy);
 }
 
@@ -3537,7 +3549,7 @@ body {
   font-weight: 700;
   line-height: 1;
   color: rgba(11, 94, 215, 0.04);
-  font-family: Georgia, serif;
+  font-family: var(--font-serif);
   animation: testiQuoteRotate 30s linear infinite;
   pointer-events: none;
 }
@@ -3604,8 +3616,8 @@ body {
 .testi-label {
   margin: 0;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--medical-blue);
 }
@@ -3613,9 +3625,7 @@ body {
 .testi-top-header h2 {
   margin: 0.75rem 0 0;
   font-size: clamp(1.9rem, 3.8vw, 2.75rem);
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
   color: var(--deep-navy);
 }
 
@@ -3816,7 +3826,7 @@ body {
   font-weight: 700;
   line-height: 1;
   color: rgba(11, 94, 215, 0.12);
-  font-family: Georgia, serif;
+  font-family: var(--font-serif);
 }
 
 .testi-card-header {
@@ -4123,8 +4133,8 @@ body {
 .book-label {
   margin: 0;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--medical-blue);
 }
@@ -4132,9 +4142,7 @@ body {
 .book-header h2 {
   margin: 0.75rem 0 0;
   font-size: clamp(1.9rem, 3.8vw, 2.85rem);
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
   color: var(--deep-navy);
 }
 
@@ -4613,8 +4621,7 @@ body {
 .home-section h2 {
   margin: 0;
   font-size: clamp(1.5rem, 3vw, 2.15rem);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
   color: var(--deep-navy);
 }
 
@@ -4956,9 +4963,9 @@ body {
 
 .footer-heading {
   margin: 0 0 1.15rem;
-  font-size: 0.8125rem;
+  font-size: 0.625rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--deep-navy);
 }
@@ -4997,14 +5004,14 @@ body {
 }
 
 .footer-brand-text strong {
-  font-size: 1.05rem;
-  letter-spacing: 0.03em;
+  font-size: 1.5rem;
   color: var(--medical-blue);
 }
 
 .footer-brand-text small {
   margin-top: 0.2rem;
-  font-size: 0.5rem;
+  font-size: 0.625rem;
+  font-weight: 500;
   letter-spacing: 0.2em;
   color: var(--label);
 }
@@ -5245,8 +5252,10 @@ body {
 
 .footer-tagline {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 0.625rem;
   font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--text-muted);
 }
 
