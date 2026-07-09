@@ -5273,27 +5273,12 @@ button.dept-card-link {
   transition: width 0.3s ease;
 }
 
-.footer-links a::before {
-  content: "â†’";
-  opacity: 0;
-  transform: translateX(-4px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  font-size: 0.75rem;
-  color: var(--medical-blue);
-}
-
 .footer-links a:hover {
   color: var(--medical-blue);
-  gap: 0.5rem;
 }
 
 .footer-links a:hover::after {
   width: 100%;
-}
-
-.footer-links a:hover::before {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .footer-dept-list a {
