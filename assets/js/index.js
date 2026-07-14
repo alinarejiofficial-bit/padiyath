@@ -692,7 +692,25 @@
     });
   }
 
+  /* ── Sticky Nav scroll ── */
+  function initStickyNav() {
+    const nav = document.getElementById("top-nav");
+    if (!nav) return;
+
+    function handleScroll() {
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
+    initStickyNav();
     initReveal();
     initCountUp();
     initAboutParallax();
