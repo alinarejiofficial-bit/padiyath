@@ -44,7 +44,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--white);
+  background: var(--bg-ivory);
   color: var(--text-dark);
 }
 
