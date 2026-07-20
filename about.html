@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Padiyath Hospital</title>
+    <title>About Padiyath | Padiyath Ayurveda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=1.8.0" />
   </head>
   <body>
     <div class="nav-drawer" id="nav-drawer" aria-hidden="true" inert>
@@ -33,11 +33,11 @@
         </a>
         <a href="departments.html" class="nav-drawer-link">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v16M4 12h16" /><rect x="3" y="3" width="18" height="18" rx="3" /></svg>
-          Departments
+          Our Departments
         </a>
-        <a href="doctors.html" class="nav-drawer-link">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3" /><circle cx="17" cy="10" r="2.5" /><path d="M3 20c0-3.3 2.7-6 6-6M14 20c0-2.5 2-4.5 4.5-4.5" /></svg>
-          Specialists
+        <a href="index.html#appointment" class="nav-drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2" /><path d="M8 3v4M16 3v4M4 11h16" /></svg>
+          Book Now
         </a>
         <a href="contact.html" class="nav-drawer-link">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="2" /><path d="M4 8l8 5 8-5" /></svg>
@@ -47,7 +47,7 @@
     </div>
     <div class="nav-drawer-overlay" id="nav-drawer-overlay" hidden></div>
 
-    <main class="page-shell">
+    <main class="page-shell" id="about-page">
       <header class="top-nav" aria-label="Primary navigation">
         <div class="nav-brand-group">
           <button type="button" class="nav-menu-btn" id="nav-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
@@ -55,25 +55,21 @@
               <path d="M4 7h16M4 12h16M4 17h16" />
             </svg>
           </button>
-          <a class="brand" href="index.html" aria-label="Padiyath Hospital home">
-          <span class="brand-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
-              <path d="M12 7.5v9M7.5 12h9" />
-            </svg>
-          </span>
-          <span class="brand-text">
-            <strong>PADIYATH</strong>
-            <small>HOSPITAL</small>
-          </span>
-        </a>
+          <a class="brand" href="index.html" aria-label="Padiyath Ayurveda home">
+            <img
+              class="brand-logo-img"
+              src="assets/images/logo.png"
+              alt="Padiyath Ayurveda &amp; Modern Hospital"
+              decoding="async"
+            />
+          </a>
         </div>
 
         <nav class="nav-links">
           <a href="index.html">Home</a>
           <a class="active" href="about.html">About Us</a>
-          <a href="departments.html">Departments</a>
-          <a href="doctors.html">Specialists</a>
+          <a href="departments.html">Our Departments</a>
+          <a href="index.html#appointment">Book Now</a>
           <a href="contact.html">Contact</a>
         </nav>
 
@@ -93,452 +89,403 @@
         </div>
       </header>
 
-      <section class="abt-hero reveal" aria-labelledby="abt-hero-heading">
-        <div class="abt-hero-bg" aria-hidden="true">
-          <div class="abt-hero-glow abt-hero-glow--1"></div>
-          <div class="abt-hero-glow abt-hero-glow--2"></div>
-        </div>
-        <p class="abt-hero-label">About Padiyath Hospital</p>
-        <h1 id="abt-hero-heading">
-          A Legacy of Care,
-          <span>a Future of Healing</span>
-        </h1>
-        <p class="abt-hero-lead">
-          Discover our story, our purpose, and the values that guide every patient
-          interaction at Padiyath Hospital.
-        </p>
-      </section>
 
-      <section
-        class="about-section abt-intro-section"
-        id="hospital-introduction"
-        aria-labelledby="intro-heading"
-      >
+      <section class="about-section abt-intro-section" id="about-padiyath" aria-labelledby="intro-heading">
         <div class="about-bg-gradient" aria-hidden="true"></div>
-
         <div class="about-main">
-          <div class="about-content reveal">
-            <p class="about-label">Hospital Introduction</p>
-            <h2 id="intro-heading">Where Compassion Meets Clinical Excellence</h2>
-            <p class="about-description">
-              Padiyath Hospital is a multi-specialty healthcare institution dedicated to delivering
-              world-class medical services with warmth, dignity, and respect. Founded with a vision
-              to make premium healthcare accessible, we have grown into a trusted name for families
-              across Kerala and beyond.
-            </p>
-            <p class="about-description">
-              Our hospital brings together experienced specialists, advanced diagnostic and surgical
-              technology, and a patient-first culture. From preventive care to complex procedures,
-              every service is designed to ensure safety, comfort, and the best possible outcomes.
-            </p>
-
-            <div class="about-features">
-              <article class="about-feature-card reveal reveal-delay-1">
-                <span class="about-feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M12 21s-6.5-4.35-6.5-9.5A4.5 4.5 0 0 1 12 7.5a4.5 4.5 0 0 1 6.5 4A4.5 4.5 0 0 1 12 21Z" />
-                  </svg>
-                </span>
-                <div>
-                  <h3>Compassionate Care</h3>
-                  <p>Every patient is treated with empathy and individual attention.</p>
-                </div>
-              </article>
-
-              <article class="about-feature-card reveal reveal-delay-2">
-                <span class="about-feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M4.5 9.5h15v10h-15z" />
-                    <path d="M8 9.5V6.5h8v3" />
-                    <path d="M10 14h4" />
-                  </svg>
-                </span>
-                <div>
-                  <h3>Advanced Technology</h3>
-                  <p>Modern equipment supporting precise diagnosis and treatment.</p>
-                </div>
-              </article>
-
-              <article class="about-feature-card reveal reveal-delay-3">
-                <span class="about-feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M12 5a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" />
-                    <path d="M4 19c0-3.314 3.582-6 8-6s8 2.686 8 6" />
-                  </svg>
-                </span>
-                <div>
-                  <h3>Expert Team</h3>
-                  <p>Board-certified doctors across 20+ medical departments.</p>
-                </div>
-              </article>
-
-              <article class="about-feature-card reveal reveal-delay-4">
-                <span class="about-feature-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="8.5" />
-                    <path d="M12 7.5v5l3 2" />
-                  </svg>
-                </span>
-                <div>
-                  <h3>24/7 Availability</h3>
-                  <p>Emergency and critical care services around the clock.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="about-visual reveal reveal-delay-2" data-parallax>
-            <div class="about-visual-glow" aria-hidden="true"></div>
-            <div class="about-shape about-shape--cross" aria-hidden="true"></div>
-            <div class="about-shape about-shape--ring" aria-hidden="true"></div>
-            <div class="about-shape about-shape--dots" aria-hidden="true"></div>
-
+          <div class="about-visual reveal">
             <div class="about-image-wrap">
               <img
                 class="about-image"
-                src="assets/images/hero.png"
-                alt="Padiyath Hospital care environment"
-                width="800"
-                height="640"
+                src="assets/images/about_ayurveda_herbs.png"
+                alt="Ayurvedic herbs, oils and traditional preparations at Padiyath Ayurveda"
+                width="1024"
+                height="576"
                 loading="lazy"
                 decoding="async"
               />
             </div>
-
-            <article class="about-float-card about-float-card--1">
-              <span class="about-float-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 5a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" />
-                  <path d="M4 19c0-3.314 3.582-6 8-6s8 2.686 8 6" />
+          </div>
+          <div class="about-content reveal reveal-delay-1">
+            <div class="abt-kicker">
+              <span class="abt-kicker-leaf" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2C7.5 6 7.5 12 12 16c4.5-4 4.5-10 0-14z"/>
+                  <path d="M12 16v4"/>
                 </svg>
               </span>
-              <div>
-                <p class="about-float-value">25+</p>
-                <p class="about-float-label">Doctors</p>
-              </div>
-            </article>
-
-            <article class="about-float-card about-float-card--2">
-              <span class="about-float-icon about-float-icon--red" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3v18M3 12h18" />
-                </svg>
-              </span>
-              <div>
-                <p class="about-float-value">24/7</p>
-                <p class="about-float-label">Emergency</p>
-              </div>
-            </article>
+              <span class="abt-kicker-label">About Us</span>
+              <span class="abt-kicker-line" aria-hidden="true"></span>
+            </div>
+            <h1 id="intro-heading">About Padiyath Ayurveda</h1>
+            <p class="about-tagline">A Legacy of Healing. A Promise of Wellness.</p>
+            <p class="about-description">
+              Padiyath Ayurveda and Modern Hospital (PAMH) is one of the premium institutions in
+              practicing Ayurveda — the ancient science of life — with its purity and sanctity.
+            </p>
+            <a class="btn-primary about-cta" href="#our-story">
+              Discover Our Journey
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
           </div>
         </div>
+      </section>
 
-        <div class="about-stats-row reveal" aria-label="Hospital achievements">
-          <article class="about-stat">
-            <p class="about-stat-value">
-              <span class="count-up" data-target="25" data-suffix="+">0</span>
+      <section class="impact-section impact-premium" id="our-status" aria-labelledby="status-heading">
+        <header class="impact-header reveal">
+          <div class="abt-kicker">
+            <span class="abt-kicker-leaf" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C7.5 6 7.5 12 12 16c4.5-4 4.5-10 0-14z"/>
+                <path d="M12 16v4"/>
+              </svg>
+            </span>
+            <span class="abt-kicker-label">
+              <span class="abt-kicker-line" aria-hidden="true"></span>
+              Our Status in Numbers
+              <span class="abt-kicker-line" aria-hidden="true"></span>
+            </span>
+          </div>
+          <h2 id="status-heading" class="impact-heading">Our Status in Numbers</h2>
+        </header>
+
+        <div class="impact-stats reveal reveal-delay-1" role="list">
+          <article class="impact-stat" role="listitem">
+            <p class="impact-stat-value">
+              <span class="impact-count" data-target="50" data-suffix="">0</span>
             </p>
-            <p class="about-stat-label">Years of Service</p>
+            <h3>Qualified Doctors</h3>
+            <p>Benefit from the expertise of over 50 qualified doctors, ensuring personalized and top-notch medical care.</p>
           </article>
-          <span class="about-stat-divider" aria-hidden="true"></span>
-          <article class="about-stat">
-            <p class="about-stat-value">
-              <span class="count-up" data-target="20" data-suffix="+">0</span>
+
+          <article class="impact-stat" role="listitem">
+            <p class="impact-stat-value">
+              <span class="impact-count" data-target="57" data-suffix="+">0</span>
             </p>
-            <p class="about-stat-label">Departments</p>
+            <h3>Years of Experience</h3>
+            <p>Trust in our 57+ years of collective experience, providing a proven track record of quality care and commitment to your well-being.</p>
           </article>
-          <span class="about-stat-divider" aria-hidden="true"></span>
-          <article class="about-stat">
-            <p class="about-stat-value">
-              <span class="count-up" data-target="150" data-suffix="+">0</span>
+
+          <article class="impact-stat" role="listitem">
+            <p class="impact-stat-value">
+              <span class="impact-count" data-target="30" data-suffix="">0</span>
             </p>
-            <p class="about-stat-label">Hospital Beds</p>
+            <h3>Specialized Services</h3>
+            <p>Explore our comprehensive range of 30 specialized services, tailored to address a diverse array of health concerns.</p>
           </article>
-          <span class="about-stat-divider" aria-hidden="true"></span>
-          <article class="about-stat">
-            <p class="about-stat-value">
-              <span class="count-up" data-target="50000" data-suffix="+">0</span>
+
+          <article class="impact-stat" role="listitem">
+            <p class="impact-stat-value">
+              <span class="impact-count" data-target="100000" data-suffix="+">0</span>
             </p>
-            <p class="about-stat-label">Patients Served</p>
+            <h3>Happy Customers</h3>
+            <p>Join over 100,000+ satisfied customers who have experienced our commitment to excellence and personalized healthcare.</p>
           </article>
         </div>
       </section>
 
-      <section class="abt-vm-section" id="vision-mission" aria-labelledby="vm-heading">
+      <section class="abt-vm-section abt-vm-section--founders" id="our-founders" aria-labelledby="founders-heading">
         <div class="abt-vm-bg" aria-hidden="true">
           <div class="abt-vm-glow abt-vm-glow--1"></div>
           <div class="abt-vm-glow abt-vm-glow--2"></div>
         </div>
-
         <header class="abt-section-header reveal">
-          <p class="about-label">Our Purpose</p>
-          <h2 id="vm-heading">Guided by Vision, Driven by Mission</h2>
+          <p class="about-label">Our Founders</p>
+          <h2 id="founders-heading">Our Founders</h2>
           <p class="abt-section-intro">
-            Every decision we make is rooted in a clear vision for the future of healthcare and a
-            mission to serve our community with integrity and excellence.
+            Meet the visionaries behind Padiyath Ayurvedic Hospital, the founders who have dedicated
+            their lives to revitalizing traditional healing practices. Driven by a shared passion for
+            Ayurveda, our founders bring a wealth of knowledge and experience to the forefront of
+            holistic healthcare.
           </p>
         </header>
-
-        <div class="abt-vm-grid">
-          <article class="abt-vm-card reveal reveal-delay-1" id="vision">
-            <span class="abt-vm-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
-                <circle cx="12" cy="12" r="3" />
-              </svg>
-            </span>
-            <h3>Our Vision</h3>
-            <p>
-              To be the most trusted healthcare institution in the region — recognized for clinical
-              excellence, innovation, and a deeply human approach to healing that puts patients and
-              families at the center of everything we do.
-            </p>
-            <ul class="abt-vm-list">
-              <li>Leadership in advanced medical care</li>
-              <li>Accessible healthcare for every community</li>
-              <li>A culture of continuous improvement</li>
-            </ul>
+        <div class="abt-founder-grid reveal">
+          <article class="abt-founder-card">
+            <div class="abt-founder-portrait" aria-hidden="true">PA</div>
+            <h3>Dr. P. Alikutty</h3>
+            <p class="abt-founder-role">Ayurvedic Spa Treatment</p>
+            <p class="abt-founder-bio">Together, our founders embody the spirit of Padiyath, creating a haven where the time-tested principles of Ayurveda.</p>
           </article>
-
-          <article class="abt-vm-card reveal reveal-delay-2" id="mission">
-            <span class="abt-vm-icon abt-vm-icon--teal" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M12 21s-6.5-4.35-6.5-9.5A4.5 4.5 0 0 1 12 7.5a4.5 4.5 0 0 1 6.5 4A4.5 4.5 0 0 1 12 21Z" />
-              </svg>
-            </span>
-            <h3>Our Mission</h3>
-            <p>
-              To deliver compassionate, high-quality healthcare through skilled professionals,
-              state-of-the-art technology, and a commitment to safety, dignity, and personalized
-              care for every patient who walks through our doors.
-            </p>
-            <ul class="abt-vm-list">
-              <li>Provide ethical and evidence-based treatment</li>
-              <li>Invest in medical education and innovation</li>
-              <li>Serve with empathy, respect, and transparency</li>
-            </ul>
+          <article class="abt-founder-card">
+            <div class="abt-founder-portrait abt-founder-portrait--alt" aria-hidden="true">TK</div>
+            <h3>T. Khyrunneesa</h3>
+            <p class="abt-founder-role">Ayurvedic Spa Treatment</p>
+            <p class="abt-founder-bio">Together, our founders embody the spirit of Padiyath, creating a haven where the time-tested principles of Ayurveda.</p>
           </article>
         </div>
       </section>
 
-      <section
-        class="abt-history-section"
-        id="hospital-history"
-        aria-labelledby="history-heading"
-      >
-        <div class="abt-history-bg" aria-hidden="true">
-          <div class="abt-history-glow"></div>
+      <section class="heritage-section heritage-section--story" id="our-story" aria-labelledby="story-heading">
+        <div class="heritage-inner">
+          <div class="heritage-media reveal">
+            <img
+              class="heritage-image"
+              src="assets/images/ac7262518f2c40dec5be7b1a4511d96e.jpg"
+              alt="Traditional Ayurvedic pulse diagnosis at Padiyath Ayurveda"
+              width="800"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="heritage-content reveal reveal-delay-1">
+            <div class="abt-kicker heritage-kicker">
+              <span class="abt-kicker-label">
+                <span class="abt-kicker-line" aria-hidden="true"></span>
+                Our Story
+                <span class="abt-kicker-line" aria-hidden="true"></span>
+              </span>
+            </div>
+            <h2 id="story-heading" class="heritage-heading">Padiyath</h2>
+            <p class="heritage-desc">
+              Discover the driving force behind Padiyath Ayurvedic Hospital – our founders, who have
+              devoted their lives to rejuvenating traditional healing methods. United by a shared
+              enthusiasm for Ayurveda, they bring a wealth of expertise to the forefront of holistic
+              healthcare. Guided by a profound understanding of Ayurveda's impact on well-being, they
+              embarked on the journey to establish Padiyath, aiming to merge ancient wisdom with modern
+              healing. Their dedication to authenticity, integrity, and patient-centric care lays the
+              groundwork for Padiyath, ensuring that each individual receives the highest standard of
+              Ayurvedic treatment. Together, our founders epitomize the spirit of Padiyath, creating a
+              sanctuary where the time-tested principles of Ayurveda seamlessly blend with contemporary
+              healthcare practices.
+            </p>
+            <a class="btn-primary" href="departments.html">Know More</a>
+          </div>
         </div>
-
-        <header class="abt-section-header reveal">
-          <p class="about-label">Our Journey</p>
-          <h2 id="history-heading">Hospital History</h2>
-          <p class="abt-section-intro">
-            From a modest beginning to a full-service hospital, Padiyath Hospital has grown through
-            decades of dedication, community trust, and an unwavering commitment to better health.
-          </p>
-        </header>
-
-        <ol class="abt-timeline reveal reveal-delay-1">
-          <li class="abt-timeline-item">
-            <span class="abt-timeline-year">1998</span>
-            <div class="abt-timeline-card">
-              <h3>The Beginning</h3>
-              <p>
-                Padiyath Hospital was founded as a small clinic with a team of dedicated physicians
-                committed to serving the local community with affordable, quality care.
-              </p>
-            </div>
-          </li>
-          <li class="abt-timeline-item">
-            <span class="abt-timeline-year">2005</span>
-            <div class="abt-timeline-card">
-              <h3>Expansion &amp; Specialization</h3>
-              <p>
-                The hospital expanded into a multi-specialty facility, introducing cardiology,
-                orthopedics, and pediatrics departments with modern diagnostic capabilities.
-              </p>
-            </div>
-          </li>
-          <li class="abt-timeline-item">
-            <span class="abt-timeline-year">2012</span>
-            <div class="abt-timeline-card">
-              <h3>Technology Upgrade</h3>
-              <p>
-                Major investments in advanced imaging, minimally invasive surgery, and ICU
-                infrastructure positioned Padiyath as a regional center for complex care.
-              </p>
-            </div>
-          </li>
-          <li class="abt-timeline-item">
-            <span class="abt-timeline-year">2019</span>
-            <div class="abt-timeline-card">
-              <h3>Centers of Excellence</h3>
-              <p>
-                Launch of dedicated centers for cardiac care, neurosciences, and maternal health,
-                attracting specialist doctors and serving thousands of patients annually.
-              </p>
-            </div>
-          </li>
-          <li class="abt-timeline-item">
-            <span class="abt-timeline-year">Today</span>
-            <div class="abt-timeline-card">
-              <h3>A Trusted Healthcare Partner</h3>
-              <p>
-                With 20+ departments, 150+ beds, and 25+ years of excellence, Padiyath Hospital
-                continues to evolve — combining premium facilities with the warmth of personalized
-                care.
-              </p>
-            </div>
-          </li>
-        </ol>
       </section>
 
-      <section class="why-section" id="why-choose-us" aria-labelledby="why-heading">
-        <div class="why-cursor-glow" aria-hidden="true"></div>
-        <div class="why-bg" aria-hidden="true">
-          <div class="why-bg-gradient"></div>
-          <div class="why-bg-glow why-bg-glow--1"></div>
-          <div class="why-bg-glow why-bg-glow--2"></div>
-          <div class="why-bg-curve"></div>
-          <div class="why-deco why-deco--plus why-deco--1"></div>
-          <div class="why-deco why-deco--plus why-deco--2"></div>
-          <div class="why-deco why-deco--ring"></div>
-          <div class="why-deco why-deco--shape"></div>
-          <div class="why-particle why-particle--1"></div>
-          <div class="why-particle why-particle--2"></div>
-          <div class="why-particle why-particle--3"></div>
+      <section class="abt-vm-section abt-vm-section--pillars" id="why-best" aria-labelledby="why-best-heading">
+        <div class="abt-vm-bg" aria-hidden="true">
+          <div class="abt-vm-glow abt-vm-glow--1"></div>
+          <div class="abt-vm-glow abt-vm-glow--2"></div>
         </div>
+        <header class="abt-section-header reveal">
+          <p class="about-label">Why Padiyath</p>
+          <h2 id="why-best-heading">Your Wellness Journey Starts Here</h2>
+        </header>
+        <div class="abt-pillar-grid reveal">
+          <article class="abt-pillar-card">
+            <span class="abt-pillar-num" aria-hidden="true">01</span>
+            <h3>Why we are the Best</h3>
+            <p>
+              At Padiyath Ayurvedic Hospital, we stand out as the premier choice for holistic healthcare.
+              Our commitment to excellence is reflected in our unwavering dedication to providing
+              personalized, patient-centric Ayurvedic solutions. With a team of seasoned professionals,
+              state-of-the-art facilities, and a rich heritage of Ayurvedic expertise, we offer an
+              unparalleled level of care. From comprehensive diagnostics to customized treatment plans,
+              our commitment to your well-being sets us apart. Experience the pinnacle of Ayurvedic
+              healthcare at Padiyath, where your journey to optimal health begins.
+            </p>
+          </article>
+          <article class="abt-pillar-card">
+            <span class="abt-pillar-num" aria-hidden="true">02</span>
+            <h3>Our Special Features</h3>
+            <p>
+              Padiyath takes pride in its unique features that redefine the Ayurvedic healthcare
+              experience. Our state-of-the-art facilities are designed to create a serene and healing
+              environment, enhancing the effectiveness of your treatment. Tailored wellness programs,
+              individualized dietary plans, and a range of therapeutic modalities showcase our commitment
+              to holistic healing. Moreover, our skilled therapists and Ayurvedic practitioners ensure
+              that every aspect of your care is handled with expertise and compassion. Discover the
+              extraordinary at Padiyath, where special features elevate your health journey.
+            </p>
+          </article>
+          <article class="abt-pillar-card">
+            <span class="abt-pillar-num" aria-hidden="true">03</span>
+            <h3>Things we'd really love to</h3>
+            <p>
+              At Padiyath, we genuinely love guiding you towards a path of wellness. Our passion lies in
+              helping you achieve optimal health through the transformative power of Ayurveda. We aspire
+              to educate and empower you with the knowledge of holistic living, encouraging a balanced
+              lifestyle and preventive care. From fostering mindfulness to promoting self-care rituals,
+              we genuinely love being a part of your wellness journey. Let us be your partners in health,
+              as we share in the joy of your well-being.
+            </p>
+          </article>
+          <article class="abt-pillar-card">
+            <span class="abt-pillar-num" aria-hidden="true">04</span>
+            <h3>Embark on Your Wellness Odyssey</h3>
+            <p>
+              Step into a world of holistic healing at Padiyath Ayurvedic Hospital, where ancient wisdom
+              meets modern care. Our commitment to your well-being is woven into every aspect of our
+              approach, ensuring a transformative experience. Explore the path to optimal health with our
+              comprehensive wellness programs, therapeutic treatments, and personalized care. Embrace
+              wellness as a way of life at Padiyath, where your journey to vitality begins, and your
+              health becomes our top priority.
+            </p>
+          </article>
+          <article class="abt-pillar-card">
+            <span class="abt-pillar-num" aria-hidden="true">05</span>
+            <h3>What you need to do</h3>
+            <p>
+              Your journey to well-being starts with a simple step – trust Padiyath Ayurvedic Hospital.
+              Begin by scheduling a consultation with our experienced practitioners who will assess your
+              health needs and craft a personalized treatment plan. Follow through on the prescribed
+              Ayurvedic therapies, embrace lifestyle changes, and engage in the self-care practices
+              recommended by our experts. Your active participation is the key to unlocking the full
+              potential of Ayurvedic healing. Take the first step towards a healthier, happier you at
+              Padiyath.
+            </p>
+          </article>
+        </div>
+      </section>
 
+      <section class="why-section why-premium" id="our-specialities" aria-labelledby="specialities-heading">
         <header class="why-header reveal">
-          <p class="why-label">Why Choose Us</p>
-          <h2 id="why-heading">Healthcare You Can Trust, Care You Can Feel</h2>
+          <div class="abt-kicker">
+            <span class="abt-kicker-leaf" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C7.5 6 7.5 12 12 16c4.5-4 4.5-10 0-14z"/>
+                <path d="M12 16v4"/>
+              </svg>
+            </span>
+            <span class="abt-kicker-label">
+              <span class="abt-kicker-line" aria-hidden="true"></span>
+              Our Specialities
+              <span class="abt-kicker-line" aria-hidden="true"></span>
+            </span>
+          </div>
+          <h2 id="specialities-heading" class="why-heading">Our Specialities</h2>
           <p class="why-intro">
-            We combine experienced medical professionals, advanced technology, and compassionate care
-            to provide exceptional healthcare experiences for every patient. Our commitment is to your
-            health, comfort, and well-being.
+            Explore the Essence of Padiyath: Our Specialities. Dive into a world where ancient wisdom
+            meets modern wellness with our curated array of specialized services. From the rejuvenating
+            touch of Panchakarma to the precision of Nadi Pariksha, personalized Ayurvedic nutrition
+            counseling, a herbal medicine dispensary, and transformative yoga programs, each specialty is
+            crafted to elevate your journey to holistic health.
           </p>
         </header>
 
-        <div class="why-main">
-          <div class="why-features reveal reveal-delay-1">
-            <article class="why-card why-card--offset-1" data-why-tilt>
-              <span class="why-card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M4.5 9.5h15v10h-15z" />
-                  <path d="M8 9.5V6.5h8v3" />
-                  <path d="M12 3v3" />
-                </svg>
-              </span>
-              <div>
-                <h3>Advanced Medical Facilities</h3>
-                <p>State-of-the-art infrastructure with modern equipment.</p>
-              </div>
-            </article>
+        <div class="abt-spec-grid reveal">
+          <article class="abt-spec-card">
+            <span class="abt-spec-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-4 5-4 8a4 4 0 0 0 8 0c0-3-2-5-4-8Z" /><path d="M12 16v5" /></svg>
+            </span>
+            <h3>Panchakarma</h3>
+            <p>Rejuvenation</p>
+          </article>
+          <article class="abt-spec-card">
+            <span class="abt-spec-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" /><path d="M12 8v4l3 2" /></svg>
+            </span>
+            <h3>Ayurvedic Nutrition</h3>
+            <p>Guidance</p>
+          </article>
+          <article class="abt-spec-card">
+            <span class="abt-spec-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-4.35-6.5-9.5A4.5 4.5 0 0 1 12 7.5a4.5 4.5 0 0 1 6.5 4A4.5 4.5 0 0 1 12 21Z" /></svg>
+            </span>
+            <h3>Herbal Remedy</h3>
+            <p>Hub</p>
+          </article>
+          <article class="abt-spec-card">
+            <span class="abt-spec-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="6" r="3" /><path d="M12 9v12M8 15h8" /></svg>
+            </span>
+            <h3>Yoga</h3>
+            <p>Holistic Wellness</p>
+          </article>
+        </div>
+      </section>
 
-            <article class="why-card why-card--offset-2" data-why-tilt>
-              <span class="why-card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 5a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" />
-                  <path d="M4 19c0-3.314 3.582-6 8-6s8 2.686 8 6" />
-                </svg>
-              </span>
-              <div>
-                <h3>Experienced Specialists</h3>
-                <p>Highly qualified doctors across multiple specialties.</p>
-              </div>
-            </article>
+      <section class="abt-vm-section abt-vm-section--features" id="our-features" aria-labelledby="features-heading">
+        <div class="abt-vm-bg" aria-hidden="true">
+          <div class="abt-vm-glow abt-vm-glow--1"></div>
+          <div class="abt-vm-glow abt-vm-glow--2"></div>
+        </div>
+        <header class="abt-section-header reveal">
+          <p class="about-label">Our Features</p>
+          <h2 id="features-heading">Our Features</h2>
+        </header>
+        <div class="abt-feature-grid reveal">
+          <article class="abt-feature-card">
+            <span class="abt-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+            </span>
+            <h3>Holistic Healing Approach</h3>
+            <p>
+              Embrace a holistic approach to well-being at Padiyath, where traditional Ayurvedic wisdom
+              seamlessly integrates with modern healthcare practices for comprehensive healing.
+            </p>
+          </article>
+          <article class="abt-feature-card">
+            <span class="abt-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 7.5H22l-6 4.5 2.5 7.5L12 17l-6.5 5.5 2.5-7.5-6-4.5h7.5L12 3Z" /></svg>
+            </span>
+            <h3>Expertise Rooted in Tradition</h3>
+            <p>
+              Trust in our expertise deeply rooted in Ayurvedic traditions, ensuring that every treatment
+              at Padiyath is guided by centuries-old wisdom and contemporary knowledge.
+            </p>
+          </article>
+          <article class="abt-feature-card">
+            <span class="abt-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" /><circle cx="12" cy="12" r="9" /></svg>
+            </span>
+            <h3>Personalized Care Journey</h3>
+            <p>
+              Experience a personalized care journey at Padiyath, where our dedicated team tailors each
+              treatment to your unique needs, fostering a truly individualized approach to wellness.
+            </p>
+          </article>
+          <article class="abt-feature-card">
+            <span class="abt-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 0 0-9 9c0 7.5 9 12 9 12s9-4.5 9-12a9 9 0 0 0-9-9Z" /></svg>
+            </span>
+            <h3>Serene Healing Environment</h3>
+            <p>
+              Immerse yourself in a serene healing environment at Padiyath, designed to enhance the
+              therapeutic experience and promote a sense of tranquility on your path to optimal health.
+            </p>
+          </article>
+        </div>
+      </section>
 
-            <article class="why-card" data-why-tilt>
-              <span class="why-card-icon why-card-icon--rose" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 21s-6.5-4.35-6.5-9.5A4.5 4.5 0 0 1 12 7.5a4.5 4.5 0 0 1 6.5 4A4.5 4.5 0 0 1 12 21Z" />
-                </svg>
-              </span>
-              <div>
-                <h3>Patient-Centered Care</h3>
-                <p>Personalized treatment focused on every individual.</p>
-              </div>
-            </article>
-
-            <article class="why-card why-card--offset-1" data-why-tilt>
-              <span class="why-card-icon why-card-icon--red" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="8" width="18" height="10" rx="2" />
-                  <path d="M8 8V6a4 4 0 0 1 8 0v2" />
-                  <path d="M12 12v3" />
-                </svg>
-              </span>
-              <div>
-                <h3>24/7 Emergency Services</h3>
-                <p>Immediate medical assistance whenever you need it.</p>
-              </div>
-            </article>
-
-            <article class="why-card why-card--offset-2" data-why-tilt>
-              <span class="why-card-icon why-card-icon--purple" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <circle cx="11" cy="11" r="6" />
-                  <path d="M16 16l4 4" />
-                  <path d="M11 8v6M8 11h6" />
-                </svg>
-              </span>
-              <div>
-                <h3>Advanced Diagnostics</h3>
-                <p>Accurate testing using the latest medical technology.</p>
-              </div>
-            </article>
-
-            <article class="why-card" data-why-tilt>
-              <span class="why-card-icon why-card-icon--teal" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7 11l3 3 7-7" />
-                  <circle cx="12" cy="12" r="9" />
-                </svg>
-              </span>
-              <div>
-                <h3>Trusted by Thousands</h3>
-                <p>Years of excellence serving families with compassion.</p>
-              </div>
-            </article>
+      <section class="book-section book-premium" id="appointment" aria-labelledby="wellness-cta-heading">
+        <header class="book-header reveal">
+          <div class="abt-kicker">
+            <span class="abt-kicker-leaf" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C7.5 6 7.5 12 12 16c4.5-4 4.5-10 0-14z"/>
+                <path d="M12 16v4"/>
+              </svg>
+            </span>
+            <span class="abt-kicker-label">
+              <span class="abt-kicker-line" aria-hidden="true"></span>
+              Book a Consultation
+              <span class="abt-kicker-line" aria-hidden="true"></span>
+            </span>
           </div>
+          <h2 id="wellness-cta-heading" class="book-heading">Discover Your Path to Holistic Wellness with Padiyath</h2>
+          <p class="book-intro">
+            Start your wellness journey with Padiyath. Book a consultation now for personalized
+            Ayurvedic care and embrace a healthier, balanced life.
+          </p>
+        </header>
 
-          <div class="why-visual reveal reveal-delay-2" data-why-parallax>
-            <div class="why-visual-glow" aria-hidden="true"></div>
-            <div class="why-illustration">
-              <div class="why-illus-floor"></div>
-              <div class="why-illus-screen">
-                <div class="why-illus-screen-bar"></div>
-                <div class="why-illus-screen-line"></div>
-                <div class="why-illus-screen-line why-illus-screen-line--short"></div>
-              </div>
-              <div class="why-illus-figure why-illus-figure--doctor" aria-hidden="true">
-                <div class="why-illus-head"></div>
-                <div class="why-illus-body"></div>
-              </div>
-              <div class="why-illus-figure why-illus-figure--patient" aria-hidden="true">
-                <div class="why-illus-head"></div>
-                <div class="why-illus-body"></div>
-              </div>
-              <div class="why-illus-shape why-illus-shape--1" aria-hidden="true"></div>
-              <div class="why-illus-shape why-illus-shape--2" aria-hidden="true"></div>
-              <div class="why-illus-shape why-illus-shape--3" aria-hidden="true"></div>
-            </div>
-
-            <article class="why-badge why-badge--1">
-              <span aria-hidden="true">✓</span> 25+ Years of Excellence
-            </article>
-            <article class="why-badge why-badge--2">
-              <span aria-hidden="true">✓</span> 50,000+ Happy Patients
-            </article>
-            <article class="why-badge why-badge--3">
-              <span aria-hidden="true">✓</span> 20+ Expert Doctors
-            </article>
-            <article class="why-badge why-badge--4">
-              <span aria-hidden="true">✓</span> 24/7 Emergency Care
-            </article>
+        <div class="abt-cta-panel reveal">
+          <div class="abt-cta-col">
+            <p class="abt-cta-label">For Appointments</p>
+            <h3 class="abt-cta-title">Make a Call</h3>
+            <ul class="abt-cta-phones">
+              <li><a href="tel:+919539991173">+91 953 999 11 73</a></li>
+              <li><a href="tel:+919539991174">+91 953 999 11 74</a></li>
+              <li><a href="tel:+919539991175">+91 953 999 11 75</a></li>
+              <li><a href="tel:+919539991176">+91 953 999 11 76</a></li>
+            </ul>
+          </div>
+          <div class="abt-cta-divider" aria-hidden="true"></div>
+          <div class="abt-cta-col">
+            <p class="abt-cta-label">Contact Us</p>
+            <p class="abt-cta-email"><a href="mailto:info@padiyathayurveda.com">info@padiyathayurveda.com</a></p>
+            <p class="abt-cta-address">
+              Chali Bazar, Kottakkal Road, Kadungathukundu Valavannur P.O,<br />
+              Malapuram District, Kerala 676 551
+            </p>
+            <a class="btn-primary" href="contact.html">Contact Us</a>
           </div>
         </div>
       </section>
+
     </main>
 
     <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" tabindex="-1" aria-hidden="true">
@@ -549,6 +496,12 @@
 
     <footer class="site-footer reveal" id="site-footer">
       <div class="foot-cursor-glow" aria-hidden="true"></div>
+      <div class="foot-leaf-deco" aria-hidden="true">
+        <img class="foot-leaf foot-leaf--tl" src="assets/images/leaf_deco.png" alt="" loading="lazy" decoding="async" />
+        <img class="foot-leaf foot-leaf--tr" src="assets/images/leaf_deco.png" alt="" loading="lazy" decoding="async" />
+        <img class="foot-leaf foot-leaf--bl" src="assets/images/leaf_deco.png" alt="" loading="lazy" decoding="async" />
+        <img class="foot-leaf foot-leaf--br" src="assets/images/leaf_deco.png" alt="" loading="lazy" decoding="async" />
+      </div>
       <div class="foot-bg" aria-hidden="true">
         <div class="foot-bg-glow foot-bg-glow--1"></div>
         <div class="foot-bg-glow foot-bg-glow--2"></div>
@@ -564,7 +517,7 @@
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-col footer-col--brand">
-            <a class="footer-brand" href="index.html" aria-label="Padiyath Hospital home">
+            <a class="footer-brand" href="index.html" aria-label="Padiyath Ayurveda home">
               <span class="footer-brand-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none">
                   <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
@@ -573,12 +526,12 @@
               </span>
               <span class="footer-brand-text">
                 <strong>PADIYATH</strong>
-                <small>HOSPITAL</small>
+                <small>AYURVEDA</small>
               </span>
             </a>
             <p class="footer-desc">
-              Providing compassionate, world-class healthcare with experienced specialists,
-              advanced technology, and patient-centered care.
+              Padiyath Ayurveda and Modern Hospital (PAMH), one of the premium institutions in
+              practicing Ayurveda, the ancient science of life, with its purity and sanctity.
             </p>
             <div class="footer-social" aria-label="Social media">
               <a class="footer-social-link" href="#" aria-label="Facebook">
@@ -602,61 +555,52 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="index.html#featured-departments">Departments</a></li>
-              <li><a href="doctors.html">Doctors</a></li>
               <li><a href="index.html#appointment">Book Appointment</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h4 class="footer-heading">Medical Departments</h4>
+            <h4 class="footer-heading">Our Departments</h4>
             <ul class="footer-dept-list">
               <li>
-                <a href="index.html#featured-departments">
+                <a href="department.html?dept=padiyath-ayurveda">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-4.35-6.5-9.5A4.5 4.5 0 0 1 12 7.5a4.5 4.5 0 0 1 6.5 4A4.5 4.5 0 0 1 12 21Z" /></svg>
                   </span>
-                  Cardiology
+                  Padiyath Ayurveda
                 </a>
               </li>
               <li>
-                <a href="index.html#featured-departments">
+                <a href="department.html?dept=ayurvedic-cosmetic-clinic">
+                  <span class="footer-dept-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-4 5-4 8a4 4 0 0 0 8 0c0-3-2-5-4-8Z" /><path d="M9 18h6" /></svg>
+                  </span>
+                  Ayurvedic Cosmetic Clinic
+                </a>
+              </li>
+              <li>
+                <a href="department.html?dept=physiotherapy-rehab">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M8 4v6M16 4v6M6 10h12v10H6z" /></svg>
                   </span>
-                  Orthopedics
+                  Physiotherapy &amp; Rehab Clinic
                 </a>
               </li>
               <li>
-                <a href="index.html#featured-departments">
+                <a href="department.html?dept=post-delivery-care">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" /><path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6" /></svg>
                   </span>
-                  Pediatrics
+                  Post Delivery Care
                 </a>
               </li>
               <li>
-                <a href="index.html#featured-departments">
-                  <span class="footer-dept-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-4 5-4 8a4 4 0 0 0 8 0c0-3-2-5-4-8Z" /></svg>
-                  </span>
-                  Neurology
-                </a>
-              </li>
-              <li>
-                <a href="index.html#featured-departments">
+                <a href="department.html?dept=super-speciality-clinic">
                   <span class="footer-dept-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16H6z" /><path d="M9 8h6M9 12h4" /></svg>
                   </span>
-                  General Medicine
-                </a>
-              </li>
-              <li>
-                <a href="index.html#featured-departments">
-                  <span class="footer-dept-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7" /><path d="M12 5v14M5 12h14" /></svg>
-                  </span>
-                  Gynecology
+                  Super Speciality Clinic
                 </a>
               </li>
             </ul>
@@ -671,7 +615,7 @@
                 </span>
                 <div>
                   <p class="footer-contact-label">Hospital Address</p>
-                  <p class="footer-contact-value">12 Medical Avenue, Kochi, Kerala 682001</p>
+                  <p class="footer-contact-value">Chali Bazar, Kottakkal Road, Kadungathukundu Valavannur P.O, Malappuram District, Kerala 676 551</p>
                 </div>
               </li>
               <li>
@@ -680,7 +624,7 @@
                 </span>
                 <div>
                   <p class="footer-contact-label">Phone Number</p>
-                  <p class="footer-contact-value">+91 98765 43210</p>
+                  <p class="footer-contact-value">+91 953 999 11 73 · +91 953 999 11 74</p>
                 </div>
               </li>
               <li>
@@ -689,7 +633,25 @@
                 </span>
                 <div>
                   <p class="footer-contact-label">Email Address</p>
-                  <p class="footer-contact-value">care@padiyathhospital.com</p>
+                  <p class="footer-contact-value">info@padiyathayurveda.com</p>
+                </div>
+              </li>
+              <li>
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" /><path d="M12 7.5v5l3 2" /></svg>
+                </span>
+                <div>
+                  <p class="footer-contact-label">Working Hours</p>
+                  <p class="footer-contact-value">Mon–Sun · 24/7</p>
+                </div>
+              </li>
+              <li>
+                <span class="footer-contact-icon footer-contact-icon--red" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="10" rx="2" /><path d="M8 8V6a4 4 0 0 1 8 0v2" /></svg>
+                </span>
+                <div>
+                  <p class="footer-contact-label">For Appointments</p>
+                  <p class="footer-contact-value">+91 953 999 11 75 · +91 953 999 11 76</p>
                 </div>
               </li>
             </ul>
@@ -698,7 +660,7 @@
 
         <div class="footer-bottom">
           <div class="footer-bottom-left">
-            <p class="footer-copy">© 2026 Padiyath Hospital. All Rights Reserved.</p>
+            <p class="footer-copy">© 2026 Padiyath Ayurveda. All Rights Reserved.</p>
             <nav class="footer-legal" aria-label="Legal links">
               <a href="#">Privacy Policy</a>
               <a href="#">Terms &amp; Conditions</a>

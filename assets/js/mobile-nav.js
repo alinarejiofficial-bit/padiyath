@@ -40,6 +40,12 @@
       link.addEventListener("click", close);
     });
 
+    drawer.querySelectorAll(".nav-drawer-group-trigger").forEach((trigger) => {
+      trigger.addEventListener("click", (event) => {
+        event.stopPropagation();
+      });
+    });
+
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && drawer.classList.contains("is-open")) {
         close();
