@@ -9199,11 +9199,35 @@ a.spec-book-btn {
 
 .heritage-inner {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: clamp(1.75rem, 3.5vw, 3rem);
-  align-items: start;
-  max-width: 1100px;
+  align-items: stretch;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.heritage-media {
+  position: relative;
+  min-height: 420px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #fdfbf7;
+}
+
+.heritage-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.heritage-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  align-items: start;
 }
 
 .heritage-kicker {
@@ -9317,6 +9341,14 @@ a.spec-book-btn {
 
 @media (max-width: 991px) {
   .heritage-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .heritage-media {
+    min-height: 280px;
+  }
+
+  .heritage-content {
     grid-template-columns: 1fr;
   }
 
@@ -9683,6 +9715,178 @@ a.spec-book-btn {
   .abt-split .about-cta {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Why Choose Padiyath — premium redesign
+   ========================================================================== */
+
+.why-section.why-premium {
+  background: linear-gradient(165deg, #f9f7f2 0%, #ffffff 48%, #efe6d7 100%);
+  border: 1px solid rgba(110, 139, 92, 0.1);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.why-premium .why-cursor-glow,
+.why-premium .why-bg {
+  display: none;
+}
+
+.why-premium .why-header {
+  max-width: 720px;
+  margin: 0 auto clamp(2.5rem, 5vw, 3.5rem);
+  text-align: center;
+}
+
+.why-premium .why-header .abt-kicker {
+  width: 100%;
+  justify-content: center;
+}
+
+.why-premium .why-heading {
+  margin: 1.15rem 0 0;
+  font-family: var(--font-serif);
+  font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: #33421f;
+}
+
+.why-premium .why-intro {
+  margin: 1.15rem auto 0;
+  max-width: 58ch;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.why-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.why-media {
+  position: relative;
+  min-height: 460px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #fdfbf7;
+}
+
+.why-media-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.why-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.why-reason {
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  gap: 1.15rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(110, 139, 92, 0.14);
+}
+
+.why-reason:first-child {
+  padding-top: 0;
+}
+
+.why-reason:last-of-type {
+  border-bottom: 0;
+}
+
+.why-reason-num {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--gold-accent);
+  padding-top: 0.15rem;
+}
+
+.why-reason h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
+  color: var(--forest-green);
+}
+
+.why-reason p {
+  margin: 0.55rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.why-pillars {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(110, 139, 92, 0.14);
+}
+
+.why-pillar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+.why-pillar strong {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 600;
+  color: var(--gold-accent);
+  line-height: 1;
+}
+
+.why-pillar span {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+@media (max-width: 991px) {
+  .why-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .why-media {
+    min-height: 300px;
+    order: -1;
+  }
+
+  .why-pillars {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1.35rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-reason {
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0.85rem;
   }
 }
 
