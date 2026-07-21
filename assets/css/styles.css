@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --white: #ffffff;
   --medical-blue: #3E5F44; /* map to forest green */
   --deep-navy: #2C3E2B; /* map to dark forest green */
@@ -12070,26 +12070,6 @@ a.spec-book-btn {
     transparent 50%,
     rgba(110, 139, 92, 0.06) 100%
   );
-}
-
-#departments-page .dept-intro-card-media.division-2image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#departments-page .dept-intro-card-media.division-2image img,
-#departments-page img.division-2image {
-  width: auto;
-  height: auto;
-  max-width: min(168px, 46%);
-  max-height: min(168px, 62%);
-  padding: clamp(2rem, 4.5vw, 3rem);
-  object-fit: contain;
-}
-
-#departments-page .dept-intro-card--premium:hover .dept-intro-card-media.division-2image img {
-  transform: scale(1.04);
 }
 
 #departments-page .dept-intro-card-body {
