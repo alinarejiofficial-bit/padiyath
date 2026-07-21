@@ -9489,7 +9489,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Section harmonization — align every section with hero/about styling
+   Section harmonization ? align every section with hero/about styling
    ========================================================================== */
 
 .dept-label,
@@ -9668,7 +9668,7 @@ a.spec-book-btn {
   }
 }
 
-/* About section — reference layout */
+/* About section ? reference layout */
 .about-section.abt-split {
   grid-template-columns: 36% 64%;
   min-height: 0;
@@ -9830,7 +9830,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Why Choose Padiyath — premium redesign
+   Why Choose Padiyath ? premium redesign
    ========================================================================== */
 
 .why-section.why-premium {
@@ -10002,7 +10002,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Our Status in Numbers — premium redesign
+   Our Status in Numbers ? premium redesign
    ========================================================================== */
 
 .impact-section.impact-premium {
@@ -10175,7 +10175,7 @@ a.spec-book-btn {
 
 
 /* ==========================================================================
-   Book Appointment — premium redesign
+   Book Appointment ? premium redesign
    ========================================================================== */
 
 .book-section.book-premium {
@@ -10380,12 +10380,12 @@ a.spec-book-btn {
 
 
 /* ==========================================================================
-   Contact Information — aligned premium layout
+   Contact Information ? aligned premium layout
    ========================================================================== */
 
 .contact-info {
-  margin-top: clamp(3rem, 6vw, 5rem);
-  padding: clamp(3rem, 6vw, 4.5rem) clamp(1.25rem, 3vw, 2rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(2.25rem, 4.5vw, 3.25rem) clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 2.5vw, 1.75rem);
 }
 
 .contact-info-inner {
@@ -10496,7 +10496,7 @@ a.spec-book-btn {
 
 
 /* ==========================================================================
-   Section stack — flush panels, no ivory gaps between sections
+   Section stack ? flush panels, no ivory gaps between sections
    ========================================================================== */
 
 .page-shell > section + section {
@@ -10530,8 +10530,14 @@ a.spec-book-btn {
   border-radius: 0 0 var(--radius-xl) var(--radius-xl);
 }
 
+/* Keep footer visible ? reveal opacity was leaving a large blank gap after contact */
+.site-footer.reveal {
+  opacity: 1;
+  transform: none;
+}
+
 /* ==========================================================================
-   About Page — premium styling
+   About Page ? premium styling
    ========================================================================== */
 
 #about-page > section {
@@ -11234,7 +11240,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Nav dropdown — Our Departments (Pharmaceuticals + Hospital)
+   Nav dropdown ? Our Departments (Pharmaceuticals + Hospital)
    ========================================================================== */
 
 .nav-dropdown {
@@ -11420,7 +11426,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Departments page — Pharmaceuticals + Hospital divisions
+   Departments page ? Pharmaceuticals + Hospital divisions
    ========================================================================== */
 
 .dept-division-section {
@@ -11621,7 +11627,7 @@ a.spec-book-btn {
   }
 }
 
-/* Homepage & departments page — division blocks */
+/* Homepage & departments page ? division blocks */
 
 .dept-divisions {
   display: flex;
@@ -11703,7 +11709,7 @@ a.spec-book-btn {
   margin-top: 0;
 }
 
-/* Departments landing — two intro cards */
+/* Departments landing ? two intro cards */
 
 .dept-intro-page {
   position: relative;
@@ -11814,7 +11820,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Departments Page — premium styling
+   Departments Page ? premium styling
    ========================================================================== */
 
 #departments-page > section {
@@ -12365,7 +12371,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Pharmaceuticals Page — premium styling
+   Pharmaceuticals Page ? premium styling
    ========================================================================== */
 
 #pharma-page > section {
@@ -12896,7 +12902,22 @@ a.spec-book-btn {
 }
 
 #pharma-page .pharma-page-cta .book-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: clamp(2rem, 4vw, 2.75rem);
+  text-align: center;
+}
+
+#pharma-page .pharma-page-cta .book-header .abt-kicker {
+  width: 100%;
+  justify-content: center;
+}
+
+#pharma-page .pharma-page-cta .book-intro {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 #pharma-page .pharma-page-cta .abt-cta-panel {
@@ -13105,7 +13126,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Hospital Page — clinic menu & styling
+   Hospital Page ? clinic menu & styling
    ========================================================================== */
 
 #hospital-page > section {
@@ -13394,7 +13415,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Departments & Pharmaceuticals — enhanced beauty pass (v1.7.0)
+   Departments & Pharmaceuticals ? enhanced beauty pass (v1.7.0)
    ========================================================================== */
 
 /* --- Departments page --- */
@@ -13621,7 +13642,7 @@ a.spec-book-btn {
   box-shadow: 0 14px 40px rgba(62, 95, 68, 0.07);
 }
 
-/* --- Pharmaceuticals page — keep CTA polish only (hero/sections styled above) --- */
+/* --- Pharmaceuticals page ? keep CTA polish only (hero/sections styled above) --- */
 
 #pharma-page .pharma-page-cta {
   position: relative;
@@ -13732,7 +13753,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Department detail — rich content sections
+   Department detail ? rich content sections
    ========================================================================== */
 
 #department-detail .dept-detail-description + .dept-detail-description {
@@ -13918,7 +13939,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Contact Page — premium redesign
+   Contact Page ? premium redesign
    ========================================================================== */
 
 #contact-page > section {
@@ -14266,11 +14287,13 @@ a.spec-book-btn {
 
 #contact-page .contact-cta-inner {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 1.35rem;
   padding: clamp(1.75rem, 3.5vw, 2.5rem);
+  text-align: center;
   border-radius: var(--radius-xl);
   background:
     linear-gradient(165deg, rgba(62, 95, 68, 0.06) 0%, rgba(249, 247, 242, 0.98) 45%, rgba(255, 255, 255, 0.95) 100%);
@@ -14296,7 +14319,7 @@ a.spec-book-btn {
 }
 
 #contact-page .contact-cta-inner p {
-  margin: 0.5rem 0 0;
+  margin: 0.5rem auto 0;
   max-width: 42ch;
   font-size: 0.95rem;
   line-height: 1.65;
@@ -14306,6 +14329,7 @@ a.spec-book-btn {
 #contact-page .contact-cta-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
 }
 
@@ -14337,12 +14361,12 @@ a.spec-book-btn {
 
 @media (max-width: 600px) {
   #contact-page .contact-cta-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #contact-page .contact-cta-actions {
     width: 100%;
+    justify-content: center;
   }
 
   #contact-page .contact-cta-actions .btn-primary,
@@ -14353,7 +14377,7 @@ a.spec-book-btn {
 }
 
 /* ==========================================================================
-   Division heroes � Pharmaceuticals & Hospital
+   Division heroes ? Pharmaceuticals & Hospital
    ========================================================================== */
 
 .division-hero {
