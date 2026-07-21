@@ -6016,6 +6016,16 @@ button.dept-card-link {
   margin-right: auto;
 }
 
+.dept-detail-section-header--center .abt-kicker {
+  width: 100%;
+  justify-content: center;
+}
+
+.dept-detail-section-header--center .dept-detail-section-intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .dept-detail-section-header h2 {
   margin: 0.65rem 0 0;
   font-family: var(--font-serif);
@@ -14339,5 +14349,283 @@ a.spec-book-btn {
   #contact-page .contact-cta-actions .btn-secondary {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Division heroes — Pharmaceuticals & Hospital
+   ========================================================================== */
+
+.division-hero {
+  position: relative;
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+  padding: clamp(1.5rem, 3vw, 2rem) clamp(1.25rem, 3.5vw, 2.5rem) clamp(2.75rem, 5vw, 4rem);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background:
+    linear-gradient(165deg, rgba(253, 251, 247, 0.96) 0%, rgba(255, 255, 255, 0.9) 48%, rgba(245, 240, 230, 0.95) 100%);
+  border: 1px solid rgba(110, 139, 92, 0.1);
+  box-shadow: 0 20px 48px rgba(62, 95, 68, 0.06);
+}
+
+.division-hero-atmosphere {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.division-hero-mist {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 45% at 8% 92%, rgba(110, 139, 92, 0.12), transparent 70%),
+    radial-gradient(ellipse 40% 50% at 92% 45%, rgba(110, 139, 92, 0.08), transparent 65%);
+}
+
+.division-hero-deco {
+  position: absolute;
+  opacity: 0.14;
+  filter: blur(0.5px) saturate(0.85);
+}
+
+.division-hero-deco--bl {
+  width: clamp(140px, 22vw, 260px);
+  bottom: -8%;
+  left: -4%;
+  transform: rotate(-18deg);
+}
+
+.division-hero-deco--mr {
+  width: clamp(120px, 18vw, 220px);
+  top: 22%;
+  right: -3%;
+  transform: rotate(155deg) scaleX(-1);
+  opacity: 0.1;
+}
+
+.division-hero-breadcrumb {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 1.5rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.division-hero-breadcrumb a {
+  color: var(--forest-green);
+  text-decoration: none;
+}
+
+.division-hero-breadcrumb a:hover {
+  color: var(--gold-accent);
+}
+
+.division-hero-breadcrumb [aria-current="page"] {
+  color: var(--gold-accent);
+}
+
+.division-hero-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: clamp(2rem, 4.5vw, 3.75rem);
+  align-items: center;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.division-hero-copy .abt-kicker {
+  margin-bottom: 0.9rem;
+}
+
+.division-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.95rem;
+  padding: 0.4rem 0.95rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #3e5f44;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(62, 95, 68, 0.2);
+}
+
+.division-hero-badge svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  fill: none;
+}
+
+.division-hero-copy h1 {
+  margin: 0;
+  font-family: "Cormorant Garamond", var(--font-serif);
+  font-size: clamp(2.35rem, 4.8vw, 3.55rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #33421f;
+}
+
+.division-hero-rule {
+  display: block;
+  width: 56px;
+  height: 2px;
+  margin: 1.1rem 0 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--forest-green), var(--gold-accent));
+}
+
+.division-hero-lead {
+  margin: 1rem 0 0;
+  max-width: 44ch;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.division-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}
+
+.division-hero-actions .btn-primary,
+.division-hero-actions .btn-secondary {
+  border-radius: 999px;
+  padding: 0.9rem 1.45rem;
+}
+
+.division-hero-actions .btn-primary svg,
+.division-hero-actions .btn-secondary svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.division-hero-chevron {
+  font-size: 1.15rem;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.division-hero-actions .btn-secondary {
+  border-color: rgba(110, 139, 92, 0.28);
+  color: var(--forest-green);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.division-hero-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+  margin-left: auto;
+  width: 100%;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  border-radius: calc(var(--radius-xl) - 2px);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 28px 64px rgba(62, 95, 68, 0.12),
+    0 0 0 1px rgba(110, 139, 92, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.division-hero-card-logo {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: linear-gradient(160deg, #fdfbf7 0%, #f4efe3 100%);
+}
+
+.division-hero-card-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: clamp(1rem, 3vw, 1.75rem);
+}
+
+.division-hero-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 1.15rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(110, 139, 92, 0.12);
+}
+
+.division-hero-features li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 1rem 0.5rem 0.25rem;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--forest-green);
+}
+
+.division-hero-features li + li {
+  border-left: 1px solid rgba(110, 139, 92, 0.14);
+}
+
+.division-hero-feature-icon {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--forest-green);
+}
+
+.division-hero-feature-icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  fill: none;
+}
+
+@media (max-width: 900px) {
+  .division-hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .division-hero-card {
+    max-width: 380px;
+    margin: 0 auto;
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .division-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .division-hero-actions .btn-primary,
+  .division-hero-actions .btn-secondary {
+    justify-content: center;
+  }
+
+  .division-hero-features li {
+    font-size: 0.65rem;
   }
 }
