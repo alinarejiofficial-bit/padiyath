@@ -117,8 +117,9 @@
         <article class="pharma-clinic-card">
           <span class="pharma-clinic-num" aria-hidden="true">${String(i + 1).padStart(2, "0")}</span>
           <h3>${clinic.name}</h3>
+          ${clinic.label ? `<p class="pharma-clinic-label">${clinic.label}</p>` : ""}
           <p class="pharma-clinic-address">${clinic.address}</p>
-          <p class="pharma-clinic-phone"><a href="tel:${clinic.phone.replace(/\s/g, "")}">${clinic.phone}</a></p>
+          <a class="pharma-clinic-phone" href="tel:${clinic.phone.replace(/\s/g, "")}">${clinic.phone}</a>
         </article>`
         )
         .join("");

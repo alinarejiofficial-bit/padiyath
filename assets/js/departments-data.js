@@ -27,10 +27,10 @@ window.PADIYATH_PHARMACEUTICALS = {
     { name: "18 Patented Formulations", note: "Exclusive Padiyath range" },
   ],
   clinics: [
-    { name: "Padiyath Oushadashala", address: "Tirur Road Puthanathani, Malappuram District, Kerala 676 552", phone: "+91 88919 99081" },
-    { name: "Padiyath Oushadashala", address: "Kurukathani Road, Kadungathukundu Valavannur P.O, Malappuram District, Kerala 676 551", phone: "+91 99478 19081" },
-    { name: "Padiyath Oushadashala", address: "Kozhikode Road Pookiparamba, Thennala P.O, Malappuram District, Kerala 676 508", phone: "+91 89075 76327" },
-    { name: "Padiyath Oushadashala", address: "Tanalur Road Vailathur, Ponmundam P.O, Malappuram District, Kerala 676 106", phone: "+91 98464 43312" },
+    { name: "Padiyath Oushadashala", label: "Puthanathani", address: "Tirur Road Puthanathani, Malappuram District, Kerala 676 552", phone: "+91 88919 99081" },
+    { name: "Padiyath Oushadashala", label: "Kadungathukundu", address: "Kurukathani Road, Kadungathukundu Valavannur P.O, Malappuram District, Kerala 676 551", phone: "+91 99478 19081" },
+    { name: "Padiyath Oushadashala", label: "Pookiparamba", address: "Kozhikode Road Pookiparamba, Thennala P.O, Malappuram District, Kerala 676 508", phone: "+91 89075 76327" },
+    { name: "Padiyath Oushadashala", label: "Vailathur", address: "Tanalur Road Vailathur, Ponmundam P.O, Malappuram District, Kerala 676 106", phone: "+91 98464 43312" },
   ],
 };
 

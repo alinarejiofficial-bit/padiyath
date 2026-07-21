@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=1.8.4" />
   </head>
   <body>
     <div class="nav-drawer" id="nav-drawer" aria-hidden="true" inert>
       <div class="nav-drawer-header">
-        <span class="nav-drawer-brand">PADIYATH</span>
+        <img class="nav-drawer-logo-img" src="assets/images/logo.png" alt="Padiyath Ayurveda" decoding="async" />
         <button type="button" class="nav-drawer-close" id="nav-drawer-close" aria-label="Close menu">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M6 6l12 12M18 6L6 18" />
@@ -55,18 +55,14 @@
               <path d="M4 7h16M4 12h16M4 17h16" />
             </svg>
           </button>
-          <a class="brand" href="index.html" aria-label="Padiyath Hospital home">
-          <span class="brand-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
-              <path d="M12 7.5v9M7.5 12h9" />
-            </svg>
-          </span>
-          <span class="brand-text">
-            <strong>PADIYATH</strong>
-            <small>AYURVEDA</small>
-          </span>
-        </a>
+          <a class="brand" href="index.html" aria-label="Padiyath Ayurveda home">
+            <img
+              class="brand-logo-img"
+              src="assets/images/logo.png"
+              alt="Padiyath Ayurveda &amp; Modern Hospital"
+              decoding="async"
+            />
+          </a>
         </div>
 
         <nav class="nav-links">
@@ -83,7 +79,13 @@
               <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" />
             </svg>
           </button>
-          <a class="book-btn" href="index.html#appointment">Book Appointment</a>
+          <a class="book-btn" href="index.html#appointment">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="4" y="5" width="16" height="15" rx="2" />
+              <path d="M8 3v4M16 3v4M4 11h16" />
+            </svg>
+            Book Appointment
+          </a>
         </div>
       </header>
 
@@ -92,13 +94,19 @@
           <div class="contact-hero-glow contact-hero-glow--1"></div>
           <div class="contact-hero-glow contact-hero-glow--2"></div>
         </div>
-        <p class="about-label">Leave Us a Message</p>
-        <h1 id="contact-hero-heading">
-          Get In
-          <span>Touch</span>
-        </h1>
+        <div class="abt-kicker">
+          <span class="abt-kicker-leaf" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2C7.5 6 7.5 12 12 16c4.5-4 4.5-10 0-14z"/>
+              <path d="M12 16v4"/>
+            </svg>
+          </span>
+          <span class="abt-kicker-label">Leave Us a Message</span>
+          <span class="abt-kicker-line" aria-hidden="true"></span>
+        </div>
+        <h1 id="contact-hero-heading">Get In Touch</h1>
         <p class="contact-hero-lead">
-          Our experienced Ayurvedic practitioners are ready to provide personalized consultations tailored to your unique health needs.
+          Our Ayurvedic care team is ready to guide you — appointments, product enquiries, or a simple hello.
         </p>
       </section>
 
@@ -112,19 +120,32 @@
           <div>
             <p class="contact-emergency-label">For Appointments</p>
             <p class="contact-emergency-text">
-              Make a call to book your consultation with our Ayurvedic care team.
+              Call us to book a consultation with our Ayurvedic physicians.
             </p>
           </div>
-          <a class="contact-emergency-btn" href="tel:+919539991173">+91 953 999 11 73</a>
+          <div class="contact-emergency-phones">
+            <a class="contact-emergency-btn" href="tel:+919539991173">+91 953 999 11 73</a>
+            <a class="contact-emergency-btn contact-emergency-btn--ghost" href="tel:+919539991174">+91 953 999 11 74</a>
+          </div>
         </div>
       </section>
 
       <section class="contact-main-section reveal" aria-labelledby="contact-main-heading">
         <header class="contact-section-header">
-          <p class="about-label">Contact Us</p>
-          <h2 id="contact-main-heading">Get In Touch</h2>
+          <div class="abt-kicker">
+            <span class="abt-kicker-leaf" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C7.5 6 7.5 12 12 16c4.5-4 4.5-10 0-14z"/>
+                <path d="M12 16v4"/>
+              </svg>
+            </span>
+            <span class="abt-kicker-label">Contact Us</span>
+            <span class="abt-kicker-line" aria-hidden="true"></span>
+          </div>
+          <h2 id="contact-main-heading">Visit, Call, or Write</h2>
           <p class="contact-section-intro">
-            Discover the power of ancient Ayurvedic wisdom combined with modern healthcare practices. We offer comprehensive treatment plans designed to address the root cause of your health concerns.
+            Reach Padiyath Ayurveda &amp; Modern Hospital in Malappuram — we are here for appointments,
+            clinic visits, and pharmaceutical enquiries.
           </p>
         </header>
 
@@ -141,7 +162,7 @@
                 <div>
                   <h3>Address</h3>
                   <p>Chali Bazar, Kottakkal Road, Kadungathukundu Valavannur P.O, Malapuram District, Kerala 676 551</p>
-                  <a href="https://maps.google.com/?q=Kadungathukundu+Valavannur+Malappuram+Kerala" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                  <a class="contact-info-link" href="https://maps.google.com/?q=Kadungathukundu+Valavannur+Malappuram+Kerala" target="_blank" rel="noopener noreferrer">Get Directions →</a>
                 </div>
               </li>
               <li class="contact-info-card">
@@ -151,10 +172,13 @@
                   </svg>
                 </span>
                 <div>
-                  <h3>Phone Number</h3>
-                  <p><a href="tel:+919539991173">+91 953 999 11 73</a></p>
-                  <p><a href="tel:+919539991174">+91 953 999 11 74</a></p>
-                  <p><a href="tel:+919539991175">+91 953 999 11 75</a></p>
+                  <h3>Phone</h3>
+                  <ul class="contact-phone-list">
+                    <li><a href="tel:+919539991173">+91 953 999 11 73</a></li>
+                    <li><a href="tel:+919539991174">+91 953 999 11 74</a></li>
+                    <li><a href="tel:+919539991175">+91 953 999 11 75</a></li>
+                    <li><a href="tel:+919539991176">+91 953 999 11 76</a></li>
+                  </ul>
                   <p class="contact-info-sub">Opening Hours · 24/7</p>
                 </div>
               </li>
@@ -167,7 +191,7 @@
                 </span>
                 <div>
                   <h3>Email</h3>
-                  <p><a href="mailto:info@padiyathayurveda.com">info@padiyathayurveda.com</a></p>
+                  <p><a class="contact-info-link" href="mailto:info@padiyathayurveda.com">info@padiyathayurveda.com</a></p>
                 </div>
               </li>
             </ul>
@@ -187,8 +211,9 @@
           </div>
 
           <div class="contact-form-panel">
+            <p class="contact-form-kicker">Send a Message</p>
             <h3 class="contact-form-title">Contact Form</h3>
-            <p class="contact-form-desc">Send us your name, phone, email and message — our team will respond shortly.</p>
+            <p class="contact-form-desc">Share your name, phone, email and message — our team will respond shortly.</p>
 
             <form class="contact-form book-form" id="contact-form" action="#" method="post">
               <div class="book-field">
@@ -209,7 +234,7 @@
                 <label for="contact-message">Message</label>
                 <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
               </div>
-              <button class="btn-primary contact-submit book-submit" type="submit">Contact Us</button>
+              <button class="btn-primary contact-submit book-submit" type="submit">Send Message</button>
             </form>
           </div>
         </div>
@@ -218,17 +243,13 @@
       <section class="contact-cta reveal" aria-labelledby="contact-cta-heading">
         <div class="contact-cta-inner">
           <div>
+            <p class="contact-cta-label">Book a Visit</p>
             <h2 id="contact-cta-heading">Make a Reservation</h2>
             <p>Book an appointment online or call us for Ayurvedic consultations and treatments.</p>
           </div>
           <div class="contact-cta-actions">
-            <a class="btn-primary" href="index.html#appointment">
-              Book Appointment
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="4" y="5" width="16" height="15" rx="2" />
-                <path d="M8 3v4M16 3v4M4 11h16" />
-              </svg>
-            </a>
+            <a class="btn-primary" href="index.html#appointment">Book Appointment</a>
+            <a class="btn-secondary" href="tel:+919539991173">Call Now</a>
           </div>
         </div>
       </section>
@@ -252,45 +273,23 @@
         <div class="foot-bg-glow foot-bg-glow--1"></div>
         <div class="foot-bg-glow foot-bg-glow--2"></div>
         <div class="foot-bg-wave"></div>
-        <div class="foot-deco foot-deco--plus foot-deco--1"></div>
-        <div class="foot-deco foot-deco--plus foot-deco--2"></div>
-        <div class="foot-particle foot-particle--1"></div>
-        <div class="foot-particle foot-particle--2"></div>
       </div>
 
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-col footer-col--brand">
             <a class="footer-brand" href="index.html" aria-label="Padiyath Ayurveda home">
-              <span class="footer-brand-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4" />
-                  <path d="M12 7.5v9M7.5 12h9" />
-                </svg>
-              </span>
-              <span class="footer-brand-text">
-                <strong>PADIYATH</strong>
-                <small>AYURVEDA</small>
-              </span>
+              <img
+                class="brand-logo-img"
+                src="assets/images/logo.png"
+                alt="Padiyath Ayurveda"
+                decoding="async"
+              />
             </a>
             <p class="footer-desc">
               Padiyath Ayurveda and Modern Hospital (PAMH), one of the premium institutions in
               practicing Ayurveda, the ancient science of life, with its purity and sanctity.
             </p>
-            <div class="footer-social" aria-label="Social media">
-              <a class="footer-social-link" href="#" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H6v4h3v8h4v-8h3l1-4h-4V9c0-.6.4-1 1-1Z" /></svg>
-              </a>
-              <a class="footer-social-link" href="#" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" /><circle cx="12" cy="12" r="3.5" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
-              </a>
-              <a class="footer-social-link" href="#" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 11v5M8 8v.01M12 16v-5c0-1.1.9-2 2-2s2 .9 2 2v5" /></svg>
-              </a>
-              <a class="footer-social-link" href="#" aria-label="YouTube">
-                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="3" /><path d="M11 10l4 2-4 2v-4Z" /></svg>
-              </a>
-            </div>
           </div>
 
           <div class="footer-col">
@@ -322,7 +321,7 @@
                 </span>
                 <div>
                   <p class="footer-contact-label">Phone Number</p>
-                  <p class="footer-contact-value">+91 953 999 11 73 · +91 953 999 11 74 · +91 953 999 11 75 · +91 953 999 11 76</p>
+                  <p class="footer-contact-value">+91 953 999 11 73–76</p>
                 </div>
               </li>
               <li>
@@ -339,15 +338,7 @@
         </div>
 
         <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p class="footer-copy">© 2026 Padiyath Ayurveda. All Rights Reserved.</p>
-            <nav class="footer-legal" aria-label="Legal links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms &amp; Conditions</a>
-              <a href="#">Accessibility</a>
-              <a href="#">Sitemap</a>
-            </nav>
-          </div>
+          <p class="footer-copy">© 2026 Padiyath Ayurveda. All Rights Reserved.</p>
           <p class="footer-tagline">Designed with <span aria-label="love">♥</span> for Better Healthcare</p>
         </div>
       </div>
