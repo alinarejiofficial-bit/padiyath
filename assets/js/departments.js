@@ -154,13 +154,23 @@
       banner.querySelector("[data-dept-name]").textContent = dept.subtitle || dept.name;
       banner.querySelector("[data-dept-short]").textContent = dept.shortDescription;
       const img = banner.querySelector("img");
-      if (img) {
-        img.src = dept.image;
-        img.alt = `${dept.name} department at Padiyath Hospital`;
-      }
       const media = banner.querySelector(".dept-detail-banner-media");
+      const overlay = banner.querySelector(".dept-card-overlay");
+      const useLogo = Boolean(dept.logo);
+
+      if (img) {
+        img.src = dept.logo || dept.image;
+        img.alt = `${dept.name} at Padiyath Hospital`;
+        img.classList.toggle("dept-logo", useLogo);
+      }
+
       if (media) {
-        media.className = `dept-detail-banner-media ${dept.mediaClass}`;
+        media.className = `dept-detail-banner-media ${dept.mediaClass || ""}${useLogo ? " dept-detail-banner-media--logo" : ""}`;
+      }
+
+      if (overlay) {
+        overlay.hidden = useLogo;
+        overlay.style.display = useLogo ? "none" : "";
       }
     }
 
