@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css?v=1.7.0" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=1.8.3" />
   </head>
   <body>
     <div class="nav-drawer" id="nav-drawer" aria-hidden="true" inert>
@@ -92,7 +92,7 @@
           <span class="abt-breadcrumb-sep" aria-hidden="true">/</span>
           <span aria-current="page">Padiyath Pharmaceuticals</span>
         </nav>
-        <div class="dept-detail-banner-inner">
+        <div class="dept-detail-banner-inner pharma-hero-inner">
           <div class="dept-detail-banner-content">
             <div class="abt-kicker">
               <span class="abt-kicker-leaf" aria-hidden="true">
@@ -115,8 +115,15 @@
             </div>
           </div>
           <div class="dept-detail-banner-media dept-card-media--pharma pharma-hero-media">
-            <img src="assets/images/division-2.png" alt="Padiyath Pharmaceuticals" loading="eager" decoding="async" data-pharma-image />
-            <div class="dept-card-overlay"></div>
+            <img
+              src="assets/images/division-2.png"
+              alt="Padiyath Pharmaceuticals"
+              width="640"
+              height="640"
+              loading="eager"
+              decoding="async"
+              data-pharma-image
+            />
           </div>
         </div>
       </section>
@@ -249,24 +256,32 @@
           </header>
           <div class="pharma-clinic-grid" data-pharma-clinics>
             <article class="pharma-clinic-card">
+              <span class="pharma-clinic-num" aria-hidden="true">01</span>
               <h3>Padiyath Oushadashala</h3>
+              <p class="pharma-clinic-label">Puthanathani</p>
               <p class="pharma-clinic-address">Tirur Road Puthanathani, Malappuram District, Kerala 676 552</p>
-              <p class="pharma-clinic-phone"><a href="tel:+918891999081">+91 88919 99081</a></p>
+              <a class="pharma-clinic-phone" href="tel:+918891999081">+91 88919 99081</a>
             </article>
             <article class="pharma-clinic-card">
+              <span class="pharma-clinic-num" aria-hidden="true">02</span>
               <h3>Padiyath Oushadashala</h3>
+              <p class="pharma-clinic-label">Kadungathukundu</p>
               <p class="pharma-clinic-address">Kurukathani Road, Kadungathukundu Valavannur P.O, Malappuram District, Kerala 676 551</p>
-              <p class="pharma-clinic-phone"><a href="tel:+919947819081">+91 99478 19081</a></p>
+              <a class="pharma-clinic-phone" href="tel:+919947819081">+91 99478 19081</a>
             </article>
             <article class="pharma-clinic-card">
+              <span class="pharma-clinic-num" aria-hidden="true">03</span>
               <h3>Padiyath Oushadashala</h3>
+              <p class="pharma-clinic-label">Pookiparamba</p>
               <p class="pharma-clinic-address">Kozhikode Road Pookiparamba, Thennala P.O, Malappuram District, Kerala 676 508</p>
-              <p class="pharma-clinic-phone"><a href="tel:+918907576327">+91 89075 76327</a></p>
+              <a class="pharma-clinic-phone" href="tel:+918907576327">+91 89075 76327</a>
             </article>
             <article class="pharma-clinic-card">
+              <span class="pharma-clinic-num" aria-hidden="true">04</span>
               <h3>Padiyath Oushadashala</h3>
+              <p class="pharma-clinic-label">Vailathur</p>
               <p class="pharma-clinic-address">Tanalur Road Vailathur, Ponmundam P.O, Malappuram District, Kerala 676 106</p>
-              <p class="pharma-clinic-phone"><a href="tel:+919846443312">+91 98464 43312</a></p>
+              <a class="pharma-clinic-phone" href="tel:+919846443312">+91 98464 43312</a>
             </article>
           </div>
         </div>
@@ -289,21 +304,28 @@
         </header>
         <div class="abt-cta-panel">
           <div class="abt-cta-col">
-            <p class="abt-cta-label">Make a Call</p>
-            <p class="abt-cta-phones">
-              <a href="tel:+919539991173">+91 953 999 11 73</a>
-              <a href="tel:+919539991174">+91 953 999 11 74</a>
-              <a href="tel:+919539991175">+91 953 999 11 75</a>
-              <a href="tel:+919539991176">+91 953 999 11 76</a>
-            </p>
-            <p class="abt-cta-email"><a href="mailto:info@padiyathayurveda.com">info@padiyathayurveda.com</a></p>
-            <p class="abt-cta-address">Chali Bazar, Kottakkal Road, Kadungathukundu Valavannur P.O, Malapuram District, Kerala 676 551</p>
+            <p class="abt-cta-label">For Appointments</p>
+            <h3 class="abt-cta-title">Make a Call</h3>
+            <ul class="abt-cta-phones">
+              <li><a href="tel:+919539991173">+91 953 999 11 73</a></li>
+              <li><a href="tel:+919539991174">+91 953 999 11 74</a></li>
+              <li><a href="tel:+919539991175">+91 953 999 11 75</a></li>
+              <li><a href="tel:+919539991176">+91 953 999 11 76</a></li>
+            </ul>
           </div>
           <div class="abt-cta-divider" aria-hidden="true"></div>
           <div class="abt-cta-col abt-cta-col--action">
-            <a class="btn-primary" href="index.html#appointment">Book Online</a>
-            <a class="btn-secondary" href="contact.html">Contact Us</a>
-            <a class="btn-secondary pharma-back-link" href="departments.html">← All Departments</a>
+            <p class="abt-cta-label">Contact Us</p>
+            <p class="abt-cta-email"><a href="mailto:info@padiyathayurveda.com">info@padiyathayurveda.com</a></p>
+            <p class="abt-cta-address">
+              Chali Bazar, Kottakkal Road, Kadungathukundu Valavannur P.O,<br />
+              Malapuram District, Kerala 676 551
+            </p>
+            <div class="abt-cta-actions">
+              <a class="btn-primary" href="index.html#appointment">Book Online</a>
+              <a class="btn-secondary" href="contact.html">Contact Us</a>
+              <a class="btn-secondary pharma-back-link" href="departments.html">← All Departments</a>
+            </div>
           </div>
         </div>
       </section>
